@@ -1,0 +1,15 @@
+body{
+    margin:0px;
+}
+
+.header{
+    border:2px solid transparent;
+    text-align:center;
+    background: rgb(102,40,156);
+    background: linear-gradient(90deg, rgba(102,40,156,1) 0%, rgba(32,29,56,1) 100%);
+}
+
+.header h1,
+.header h3{
+    color:whitesmoke
+}
