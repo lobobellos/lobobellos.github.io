@@ -82,15 +82,18 @@ body{
 
 .body{
     background-color:rgb(62, 16, 88);
-
+    text-align: center;
 }
 
-.body p{
+.body .textContainer{
     width:80%;
-    margin-left:10%;
+    margin: auto;
     max-width: 600px;
+}
+
+.body .textContainer p{
+    height:200px;
     border:2px dashed white;
     color:white;
-    height:200px;
     font-family: 'Figtree', sans-serif;
 }
