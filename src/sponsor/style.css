@@ -92,7 +92,6 @@ body{
 
 .body .textContainer p{
     height:200px;
-    border:2px dashed white;
     color:white;
     font-family: 'Figtree', sans-serif;
 }
