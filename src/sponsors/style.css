@@ -90,8 +90,16 @@ body{
     max-width: 600px;
 }
 
+.textContainer h1{
+    color:white;
+    font-family: 'Figtree', sans-serif;
+}
+.textContainer h2{
+    color:white;
+    font-family: 'Figtree', sans-serif;
+}
+
 .body .textContainer p{
-    height:200px;
     color:white;
     font-family: 'Figtree', sans-serif;
 }
