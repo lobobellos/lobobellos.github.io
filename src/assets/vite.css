@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin:0px;
+  background-color:rgb(62, 16, 88);
+  padding:0px;
+}
+
+
