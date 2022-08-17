@@ -9,8 +9,11 @@ const builds = [
 ]
 
 function parseFile(file){
-  const url = new URL(file)
-  console.log(url)
+  if(file == '/'){
+		return '/main/index.js'
+	}else{
+		return file
+	}
 }
 
 const createConfig = ({ format, file }) => {
