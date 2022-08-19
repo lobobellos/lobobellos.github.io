@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
+<template>
+	<div class="body">
+        <div class="textContainer">
+            <p id="aboutUs">
+                sponsor us
+            </p>
+        </div>
+    </div>
+</template>
 
-.body{
+<script setup>
+
+</script>
+
+<style scoped>
+	.body{
     background-color:rgb(62, 16, 88);
     text-align: center;
 }
@@ -16,3 +29,4 @@
     color:white;
     font-family: 'Figtree', sans-serif;
 }
+</style>
