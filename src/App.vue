@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
 	body{
 		padding:0px;
 		margin:0px;
