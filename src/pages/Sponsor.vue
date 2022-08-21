@@ -5,15 +5,33 @@
 			<div class='tiers'>
 				<div >
 					<h3>Alpha Wolf Tier</h3>
+					<ul>
+						<li>Name on website</li>
+						<li>logo/Name on t-shirt</li>
+						<li>Name on Robot</li>
+						<li>Name announced at competitions</li>
+					</ul>
 				</div>
 				<div>
-					<h3>beta Wolf Tier</h3>
+					<h3>Beta Wolf Tier</h3>
+					<ul>
+						<li>Name on website</li>
+						<li>logo/Name on t-shirt</li>
+						<li>Name on Robot</li>
+					</ul> 
 				</div>
 				<div>
 					<h3>Delta Wolf Tier</h3>
+					<ul>
+						<li>Name on website</li>
+						<li>logo/Name on t-shirt</li>
+					</ul>
 				</div>
 				<div>
 					<h3>Wolf Cub Tier</h3>
+					<ul>
+						<li>Name on website</li>
+					</ul>
 				</div>
 			</div>
     </div>
@@ -41,14 +59,20 @@
 
 	.tiers{
 		display:flex;
-		flex-wrap:wrap
+		flex-wrap:wrap;
+		justify-content:center;
 	}
 	.tiers div{
 		text-align:center;
 		border:2px solid orange;
 		margin:15px;
 		padding:15px;
-		min-width:200px;
+		min-width:285px;
+	}
+
+	li{
+		color:white;
+		text-align:left;
 	}
 
 
