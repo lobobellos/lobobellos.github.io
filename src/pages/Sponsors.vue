@@ -1,9 +1,10 @@
 <template>
 	<div class="body">
         <div class="textContainer">
-            <p id="aboutUs">
-                our sponsors are
-            </p>
+            <h3 id="aboutUs">
+                Our Sponsors Are:
+            </h3>
+						<hr>
         </div>
     </div>
 </template>
