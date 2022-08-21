@@ -27,5 +27,6 @@ export default {
 		padding:0px;
 		margin:0px;
 		background-color:rgb(62, 16, 88) ;
+		overflow: hidden; /* Hide scrollbars */
 	}
 </style>
