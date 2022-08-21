@@ -3,8 +3,8 @@
     <router-link to="/"><div>About us</div></router-link>
     <a href="http://www.thebluealliance.com/team/7243"><div>Event history</div></a>
     <router-link to="/first"><div>What is FIRST</div></router-link>
-    <router-link to="/sponsor"><div>Sponsor us</div></router-link>
-    <router-link to="/sponsors"><div>Current sponsors</div></router-link>
+    <router-link to="/partner"><div>Partner with us</div></router-link>
+    <router-link to="/partners"><div>Our Partners</div></router-link>
     <router-link to="/contact"><div>Contact us</div></router-link>
   </div>
   
