@@ -1,6 +1,7 @@
 <template>
 	<div class="body">
-			<h3 id="mainText">We are always looking for more partners in our quest to bring stem education to today's youth. </h3><br>
+		<h2> Become a Partner</h2>
+			<h3 id="mainText">We are always looking for more partners in our quest to bring stem education to today's youth! </h3><br>
 
 			<div class='tiers'>
 				<div >

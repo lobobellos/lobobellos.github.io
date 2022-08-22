@@ -1,5 +1,6 @@
 <template>
-	<h3>Multiple team representitives would love to get in contact with you</h3>
+	<h2>Contact Us</h2>
+	<h3>Multiple team representatives would love to get in contact with you</h3>
 	<div class='body'>
 		
 		<div class='left'></div>
@@ -33,19 +34,26 @@ export default {};
 <style>
 	template{
 		
+		
 	}
 	
 	.body{
 	background-color:rgb(62, 16, 88);
-	font-family: 'Figtree', sans-serif;
+	
 	display:flex;
 	
+	}
+
+	h2{
+		text-align:center;
+		color:white;
+		font-family: 'Figtree', sans-serif;
 	}
 
 	h3{
 		color:whitesmoke;
 		text-align:center;
-		
+		font-family: 'Figtree', sans-serif;
 	}
 
 	.left{
@@ -58,8 +66,9 @@ export default {};
 	table{
 		flex:50%;
 		min-width:600px;
-		color:whitesmoke;
+		font-family: 'Figtree', sans-serif;
 		border:2px solid white;
+		color:white;
 	}
 
 	td{

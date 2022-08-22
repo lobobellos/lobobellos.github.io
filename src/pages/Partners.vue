@@ -1,21 +1,20 @@
 <template>
 	<div class="body">
+				<h2>Our Partners</h2>
 
-        <h3 id="aboutUs">Thank You to all of our amazing sponsors!</h3>
-
-					<h2>Tier 1 sponsors: $2500+</h2>
+					<h3>Alpha Wolf Partners: $2500+</h3>
 			<hr>
 			<div class='images'>
 				<img><img><img>
 			</div>
 
-			<h2>Tier 2 sponsors: $2499-$1000</h2>
+			<h3>Beta Wolf Partners: $2499-$1000</h3>
 			<hr>
 			<div class='images'>
 				<img><img><img>
 			</div>
 
-			<h2>Tier 3 sponsors: $999-$500</h2>
+			<h3>Delta Wolf Partners: $999-$500</h3>
 			<hr>
 			<ul>
 				<li>John Doe</li>
@@ -26,7 +25,7 @@
 				<li>John Doe</li>
 			</ul>
 
-			<h2>Tier 4 sponsors: $499-$0</h2>
+			<h3>Wolf Cub Partners: $499-$0</h3>
 			<hr>
 			<ul>
 				<li>John Doe</li>
@@ -61,6 +60,7 @@ h3{
 		text-align: center;
 		color:white;
     font-family: 'Figtree', sans-serif;
+		margin-bottom:3rem;
 	}
 	hr{
 		width:80%;

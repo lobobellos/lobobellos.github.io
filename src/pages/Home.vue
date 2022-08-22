@@ -1,10 +1,7 @@
 <template>
 	<div class="body">
-        <div class="textContainer">
-            <p id="aboutUs">
-                Team 7243 about paragraph
-            </p>
-        </div>
+			<h2>About Us</h2>
+          <p>Team 7243 about paragraph</p>
     </div>
 </template>
 
@@ -16,17 +13,17 @@
 	.body{
     background-color:rgb(62, 16, 88);
     text-align: center;
+		display:block;
+		color:white;
+    font-family: 'Figtree', sans-serif;
 }
 
-.body .textContainer{
+p{
     width:80%;
     margin: auto;
     max-width: 600px;
 }
 
-.body .textContainer p{
-    height:200px;
-    color:white;
-    font-family: 'Figtree', sans-serif;
-}
+
+
 </style>
