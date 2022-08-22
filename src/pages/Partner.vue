@@ -1,7 +1,7 @@
 <template>
 	<div class="body">
 		<h2> Become a Partner</h2>
-			<h3 id="mainText">We are always looking for more partners in our quest to bring stem education to today's youth! </h3><br>
+			<h3 id="mainText">We are always looking for more partners in our quest to bring stem education to today's youth! Please visit our <router-link to='/contact' id='contactLink'>contact</router-link> page for more information.</h3><br>
 
 			<div class='tiers'>
 				<div >
@@ -56,6 +56,10 @@
 		width:80%;
 		margin:auto;
 		max-width:600px;
+	}
+
+	#contactLink{
+		color:orange;
 	}
 
 	.tiers{
