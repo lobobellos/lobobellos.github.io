@@ -21,9 +21,10 @@
 
 <style scoped>
 .navbar{
-    background-color:rgb(46, 46, 46);
-    display:flex;
-    flex-wrap: wrap
+	background-color:rgb(46, 46, 46);
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
 }
 
 .navbar a div{
