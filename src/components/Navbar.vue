@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <router-link to="/"><div>About us</div></router-link>
-    <a href="http://www.thebluealliance.com/team/7243"><div>Event history</div></a>
+    <a href="http://www.thebluealliance.com/team/7243" target="_blank"><div>Event history</div></a>
     <router-link to="/first"><div>What is FIRST</div></router-link>
     <router-link to="/partner"><div>Become a Partner</div></router-link>
     <router-link to="/partners"><div>Our Partners</div></router-link>
