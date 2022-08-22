@@ -1,30 +1,28 @@
 <template>
 	<h2>Contact Us</h2>
 	<h3>Multiple team representatives would love to get in contact with you</h3>
-	<div class='body'>
 		
-		<div class='left'></div>
-		<table>
-			<tbody>
-				<tr >
-			    <td>Maryam Rahimie</td>
-			    <td>Team Affairs</td>
-			    <td>m.rhimie2@gmail.com (720)-276-3416 (cell)</td>
-			  </tr>
-			  <tr>
-			    <td>Robert Davis Jr</td>
-			    <td>(Team Affairs)</td>
-			    <td>rob2davis2@gmail.com (720)-815-8794 (cell)</td>
-			  </tr>
-			  <tr class='bottom'>
-			    <td>Matthew Lapaire</td>
-			    <td>(Lead Mentor)</td>
-			    <td>matthew_lapaire@dpsk12.net</td>
-			  </tr>
-			</tbody>
-		</table>
-		<div class='right'></div>
-	</div>
+
+	<div class='people'>
+			<div >
+				<h3>Maryam Rahimie</h3>
+				<h4>Team Affairs</h4>
+				<h4>m.rhimie2@gmail.com</h4>
+					
+				<h4>(720)-276-3416 (cell)</h4>
+			</div>
+			<div>
+				<h3>Robert Davis Jr</h3>
+				<h4>(Team Affairs)</h4>
+				<h4>rob2davis2@gmail.com</h4>
+				<h4>(720)-815-8794 (cell)</h4>
+			</div>
+			<div>
+				<h3>Matthew Lapaire</h3>
+				<h4>(Lead Mentor)</h4>
+				<h4>matthew_lapaire@dpsk12.net</h4>
+			</div>
+		</div>
 </template>
 
 <script>
@@ -79,6 +77,20 @@ export default {};
 
 	.bottom td{
 		border-bottom:none;
+	}
+
+	.people{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	.people div{
+		text-align:center;
+		border:2px solid orange;
+		margin:15px;
+		padding:15px;
+		min-width:285px;
+		color:white;
 	}
 
 
