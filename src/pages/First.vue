@@ -68,6 +68,7 @@ vertical-align:middle;
 }
 .titleContainer img{
     width:50%;
+		min-width:120px;
 }
 
 .titleContainer h1{
