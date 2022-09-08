@@ -33,4 +33,8 @@
     color:whitesmoke;
     font-family: 'Open Sans', sans-serif;
 }
+
+h1,h3{
+	text-align:left;
+}
 </style>

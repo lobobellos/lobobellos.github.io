@@ -5,35 +5,28 @@
 					<h3>Alpha Wolf Partners: $2500+</h3>
 			<hr>
 			<div class='images'>
-				<img><img><img>
+				<img src='https://assets.stickpng.com/images/5847e9c9cef1014c0b5e482b.png'>
+				<img src='https://www.un-spider.org/sites/default/files/NREL.png'>
+
 			</div>
 
 			<h3>Beta Wolf Partners: $2499-$1000</h3>
 			<hr>
 			<div class='images'>
-				<img><img><img>
+				<img src = "https://nec.dpsk12.org/wp-content/uploads/sites/147/NortheastEarlyCollegeLogo-01-scaled.jpg">
+				<img src='https://coloradosucceeds.org/wp-content/uploads/2019/01/WBL_Partners_DPSCareerConnect-300x200.jpg'>
 			</div>
 
 			<h3>Delta Wolf Partners: $999-$500</h3>
 			<hr>
 			<ul>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
+				<li>You?</li>
 			</ul>
 
 			<h3>Wolf Cub Partners: $499-$0</h3>
 			<hr>
 			<ul>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
-				<li>John Doe</li>
+				<li>You?</li>
 			</ul>
 
     </div>
@@ -68,7 +61,7 @@ h3{
 	img{
 		width:200px;
 		height:150px;
-		background-color:darkgrey;
+		background-color:white;
 		border:none;
 		margin:0.5rem;
 	}
