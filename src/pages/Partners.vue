@@ -5,7 +5,7 @@
 					<h3>Alpha Wolf Partners: $2500+</h3>
 			<hr>
 			<div class='images'>
-				<img src='https://assets.stickpng.com/images/5847e9c9cef1014c0b5e482b.png'>
+				<img src='../assets/comcast.jpg'>
 				<img src='https://www.un-spider.org/sites/default/files/NREL.png'>
 
 			</div>
