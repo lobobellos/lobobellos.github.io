@@ -5,6 +5,7 @@
 
 
     <router-view></router-view>
+		<footer/>
   </div>
 </template>
 
@@ -27,5 +28,6 @@ export default {
 		padding:0px;
 		margin:0px;
 		background-color:rgb(62, 16, 88) ;
+		padding-bottom:100px;
 	}
 </style>
