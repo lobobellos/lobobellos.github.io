@@ -6,7 +6,7 @@
 			<hr>
 			<div class='images'>
 				<img src='../assets/comcast.jpg'>
-				<img src='https://www.un-spider.org/sites/default/files/NREL.png'>
+				<img src='../assets/NREL.png'>
 
 			</div>
 

@@ -21,9 +21,11 @@
 }
 
 .header img{
-    width:40%;
-    max-width: 150px;
-    max-height: 225px;
+	width:40%;
+	max-width: 150px;
+	max-height: 225px;
+	min-width:120px;
+	min-height:175px;
 }
 
 .header .title {
