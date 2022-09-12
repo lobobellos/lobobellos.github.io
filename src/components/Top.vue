@@ -1,7 +1,4 @@
-import { MinzeElement } from 'minze'
-
-export class MyHeader extends MinzeElement {
-  html = () => `
+<template>
   <div class="header" >
     <img src="../assets/teamLogo.png" alt="team logo" >
     <div class="title">
@@ -9,11 +6,14 @@ export class MyHeader extends MinzeElement {
         <h3>Robo Lobo Bellos</h3>
     </div>
   </div>
-  `
+</template>
 
-  css = () => 
-  `
-  .header{
+<script setup>
+
+</script>
+
+<style scoped>
+.header{
     display:flex;
     
     background: rgb(102,40,156);
@@ -33,5 +33,8 @@ export class MyHeader extends MinzeElement {
     color:whitesmoke;
     font-family: 'Open Sans', sans-serif;
 }
-  `
+
+h1,h3{
+	text-align:left;
 }
+</style>

@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robo-Lobo-Bellos</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="../assets/teamLogo.png">
-</head>
-<body>
-    <my-header></my-header>
-    <my-navbar></my-navbar>
-    <div class="body">
+<template>
+  <div class="body">
         <div class="textContainer">
             <div class="titleContainer">
                 <a href="https://www.firstinspires.org">
@@ -48,7 +36,47 @@
             <p><a href="https://www.firstinspires.org/node/2541" title="About Dean Kamen">Dean Kamen</a> is a prolific inventor, entrepreneur, and tireless advocate for science and technology. His passion and determination to help young people discover the excitement and rewards of science and technology are the cornerstones of <em>FIRST</em>. For over 30 years, Kamen has resolutely led the growth of <em>FIRST </em>to where it is now universally recognized as the leading, not-for-profit STEM engagement program for kids worldwide.</p>
             </div>
     </div>
-    <script type="module" src="/vite.js"></script>
-    <script type="module" src="./script.js"></script>
-</body>
-</html>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+	.body{
+    background-color:rgb(62, 16, 88);
+    text-align: center;
+}
+
+.body .textContainer{
+    width:80%;
+    margin: auto;
+    max-width: 600px;
+}
+
+.body .textContainer {
+
+    color:white;
+    font-family: 'Figtree', sans-serif;
+}
+ 
+.titleContainer{
+display:flex;
+margin-bottom:5%;
+vertical-align:middle;
+
+}
+.titleContainer img{
+    width:50%;
+		min-width:120px;
+}
+
+.titleContainer h1{
+ margin-top:auto;
+}
+
+.body .textContainer p a:link{
+    text-decoration: underline;
+    color:white;
+}
+</style>

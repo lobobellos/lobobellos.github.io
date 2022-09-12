@@ -1,29 +1,30 @@
-import { MinzeElement } from 'minze'
-
-export class MyNavbar extends MinzeElement {
-  // html template
-  html = () => `
+<template>
   <div class="navbar">
-    <a href="/main/index.html"><div>About us</div></a>
-    <a href="http://www.thebluealliance.com/team/7243"><div>Event history</div></a>
-    <a href="/first/index.html"><div>What is FIRST</div></a>
-    <a href="/sponsor/index.html"><div>Sponsor us</div></a>
-    <a href="/sponsors/index.html"><div>Current sponsors</div></a>
-    <a href="/contact/index.html"><div>Contact us</div></a>
+    <router-link to="/"><div>About us</div></router-link>
+    <a href="http://www.thebluealliance.com/team/7243" target="_blank"><div>Event history</div></a>
+    <router-link to="/first"><div>What is FIRST</div></router-link>
+    <router-link to="/partner"><div>Become a Partner</div></router-link>
+    <router-link to="/partners"><div>Our Partners</div></router-link>
+    <router-link to="/contact"><div>Contact us</div></router-link>
   </div>
   
   <div class="custom-shape-divider-top-1660162422">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
-  </div>`
+  </div>
+</template>
 
-  // scoped stylesheet
-  css = () => `
-  .navbar{
-    background-color:rgb(46, 46, 46);
-    display:flex;
-    flex-wrap: wrap
+<script setup>
+
+</script>
+
+<style scoped>
+.navbar{
+	background-color:rgb(46, 46, 46);
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
 }
 
 .navbar a div{
@@ -72,5 +73,5 @@ export class MyNavbar extends MinzeElement {
 
 .custom-shape-divider-top-1660162422 .shape-fill {
   fill: rgb(46, 46, 46);
-}`
 }
+</style>

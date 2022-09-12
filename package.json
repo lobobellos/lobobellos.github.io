@@ -1,26 +1,17 @@
 {
-  "name": "minze-project",
+  "name": "VueJS-with-Vite",
   "version": "0.0.0",
-  "type": "module",
-  "main": "dist/module.js",
-  "unpkg": "dist/cdn.js",
-  "jsdelivr": "dist/cdn.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
-    "build": "rollup -c"
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "minze": "^1.0.2"
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "@types/node": "^18.7.6",
-    "rollup": "^2.66.1",
-    "rollup-plugin-license": "^2.6.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "vite": "^2.7.13"
+    "@vitejs/plugin-vue": "^3.0.1",
+    "vite": "^3.0.4"
   }
 }
