@@ -78,6 +78,7 @@
 	li{
 		color:white;
 		text-align:left;
+		font-family: 'Figtree', sans-serif;
 	}
 
 

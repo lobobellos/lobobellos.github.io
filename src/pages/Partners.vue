@@ -76,6 +76,7 @@ h3{
 
 	li{
 		color:white;
+		font-family: 'Figtree', sans-serif;
 	}
 
 </style>
