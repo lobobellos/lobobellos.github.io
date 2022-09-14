@@ -5,19 +5,21 @@
 
 
     <router-view></router-view>
-		<footer/>
+		<foot/>
   </div>
 </template>
 
 <script>
 	import Top from './components/Top.vue'
 	import Navbar from './components/Navbar.vue'
+	import Foot from './components/Foot.vue'
 	
 export default {
   name: "App",
 	components: {
     Top,
-		Navbar,
+	Navbar,
+	Foot,
   },
 };
 </script>
@@ -28,6 +30,5 @@ export default {
 		padding:0px;
 		margin:0px;
 		background-color:rgb(62, 16, 88) ;
-		padding-bottom:100px;
 	}
 </style>
