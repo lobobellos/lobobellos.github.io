@@ -64,7 +64,8 @@
     }
 
     .column{
-        flex-grow: 4;
+      flex-grow: 4;
+			text-align:center;
     }
 
     p{
