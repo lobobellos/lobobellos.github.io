@@ -86,7 +86,7 @@ export default {};
 	}
 	.people div{
 		text-align:center;
-		border:2px solid orange;
+		border:4px outset rgb(100,100,100);
 		margin:15px;
 		padding:15px;
 		min-width:285px;
