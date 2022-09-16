@@ -5,7 +5,7 @@
 					<h3>Alpha Wolf Partners: $2500+</h3>
 			<hr>
 			<div class='images'>
-				<img src='../assets/comcast.jpg'>
+				<img src='../assets/comcast.jpg' id="comcast">
 				<img src='../assets/NREL.png'>
 
 			</div>
@@ -23,7 +23,7 @@
 				<li>You?</li>
 			</ul>
 
-			<h3>Wolf Cub Partners: $499-$0</h3>
+			<h3>Wolf Cub Partners: $499-$1</h3>
 			<hr>
 			<ul>
 				<li>You?</li>
@@ -64,6 +64,12 @@ h3{
 		background-color:white;
 		border:none;
 		margin:0.5rem;
+	}
+
+	#comcast{
+		height:100px;
+		padding-bottom:25px;
+		padding-top:25px;
 	}
 
 	ul{
