@@ -14,13 +14,13 @@
             </div>
             <div class="column">
                 <p>Materials</p>
-                    <a href="">Work tracker</a><br>
-                    <a href="">Team contract</a><br>
-                    <a href="">Letter to sponsors</a><br>
+                    <a href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing">Team Contract</a><br>
+										<a href="../assets/structure.png">Team Structure</a><br>
+                    <a href=""></a><br>
             </div>
             <div class="column">
                 <p>Info for Sponsors</p>
-                <a href="">Sponsorship terms</a><br>
+                <a href="">Letter to Sponsors</a><br>
             </div>
         </div>
         <p id="copyright">Copyright © 2022 Robo-Lobo-Bellos. All rights reserved.</p>
