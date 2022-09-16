@@ -6,6 +6,7 @@
 			<div class='tiers'>
 				<div >
 					<h3>Alpha Wolf Tier</h3>
+					<h4>$2500+</h4>
 					<ul>
 						<li>Name on website</li>
 						<li>logo/Name on t-shirt</li>
@@ -15,6 +16,7 @@
 				</div>
 				<div>
 					<h3>Beta Wolf Tier</h3>
+					<h4>$2499-$1000</h4>
 					<ul>
 						<li>Name on website</li>
 						<li>logo/Name on t-shirt</li>
@@ -23,6 +25,7 @@
 				</div>
 				<div>
 					<h3>Delta Wolf Tier</h3>
+					<h4>$999-$500</h4>
 					<ul>
 						<li>Name on website</li>
 						<li>logo/Name on t-shirt</li>
@@ -30,6 +33,7 @@
 				</div>
 				<div>
 					<h3>Wolf Cub Tier</h3>
+					<h4>$499-$1</h4>
 					<ul>
 						<li>Name on website</li>
 					</ul>
@@ -50,7 +54,13 @@
 	}
 
 	h3{
-		text-align: center;
+		color:white;
+    font-family: 'Figtree', sans-serif;
+		width:80%;
+		margin:auto;
+		max-width:600px;
+	}
+	h4{
 		color:white;
     font-family: 'Figtree', sans-serif;
 		width:80%;
