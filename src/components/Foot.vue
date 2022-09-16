@@ -9,8 +9,10 @@
         <div class="columnContainer">
             <div class="column">
                 <p>Social Media</p>
-                <a href="https://github.com/lobobellos"><img src="../assets/github.png" alt="github"></a>
-
+								<div class='images'>
+									<a href="https://github.com/lobobellos"><img src="../assets/github.png" alt="github" id="github"></a>
+							<a href="https://instagram.com/robolobobellos"><img src="../assets/instagram.webp" alt="instagram"></a>
+								</div>
             </div>
             <div class="column">
                 <p>Materials</p>
@@ -76,11 +78,20 @@
     img{
         display:block;
         width: 25px;
-        filter: invert(100%);
-        margin:auto;
+				margin-left:5px;
+				margin-right:5px;
     }
 
+		.images{
+			display:flex;
+			justify-content:center;
+		}
 
+		
+
+		#github{
+			filter: invert(100%);
+		}
 
     .column a{
         text-align:center;
