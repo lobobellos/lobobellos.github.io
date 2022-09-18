@@ -17,7 +17,8 @@
             <div class="column">
                 <p>Materials</p>
                     <a href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing">Team Contract</a><br>
-										<a href="/src/assets/structure.png">Team Structure</a><br>
+										<a href="/assets/structure.af87e0b0.png" target='_blank'>Team Structure</a>
+										<img src='@/assets/structure.png' style='display: none;'><br>
                     <a href=""></a><br>
             </div>
             <div class="column">
