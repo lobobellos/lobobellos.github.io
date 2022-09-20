@@ -9,8 +9,8 @@
 					<h4>$2500+</h4>
 					<ul>
 						<li>Name on website</li>
-						<li>logo/Name on t-shirt</li>
-						<li>Name on Robot</li>
+						<li>Logo/Name on t-shirt</li>
+						<li>Logo/Name on Robot</li>
 						<li>Name announced at competitions</li>
 					</ul>
 				</div>
@@ -18,8 +18,8 @@
 					<h3>Beta Wolf Tier</h3>
 					<h4>$2499-$1000</h4>
 					<ul>
-						<li>Name on website</li>
-						<li>logo/Name on t-shirt</li>
+						<li>Logo/Name on website</li>
+						<li>Logo/Name on t-shirt</li>
 						<li>Name on Robot</li>
 					</ul> 
 				</div>
@@ -27,8 +27,8 @@
 					<h3>Delta Wolf Tier</h3>
 					<h4>$999-$500</h4>
 					<ul>
-						<li>Name on website</li>
-						<li>logo/Name on t-shirt</li>
+						<li>Logo/Name on website</li>
+						<li>Logo/Name on t-shirt</li>
 					</ul>
 				</div>
 				<div>
