@@ -27,7 +27,7 @@
 					<h3>Delta Wolf Tier</h3>
 					<h4>$999-$500</h4>
 					<ul>
-						<li>Logo/Name on website</li>
+						<li>Name on website</li>
 						<li>Logo/Name on t-shirt</li>
 					</ul>
 				</div>
