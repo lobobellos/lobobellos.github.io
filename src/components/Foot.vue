@@ -23,7 +23,7 @@
             </div>
             <div class="column">
                 <p>Info for Sponsors</p>
-                <a href="">Letter to Sponsors</a><br>
+                <a href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit?usp=sharing">Letter to Sponsors</a><br>
             </div>
         </div>
         <p id="copyright">Copyright © 2022 Robo-Lobo-Bellos. All rights reserved.</p>
