@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicPath: "https://lobobellos.github.io/",
 	pages: {
     index: {
       // entry for the page
