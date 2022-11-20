@@ -13,27 +13,19 @@
 			</div>
 			<div>
 				<h3>Robert Davis Jr</h3>
-				<h4>(Team Affairs)</h4>
+				<h4>Team Affairs</h4>
 				<h4>rob2davis2@gmail.com</h4>
 				<h4>(720)-815-8794 (cell)</h4>
 			</div>
 			<div>
 				<h3>Matthew Lapaire</h3>
-				<h4>(Lead Mentor)</h4>
+				<h4>Lead Mentor</h4>
 				<h4>matthew_lapaire@dpsk12.net</h4>
 			</div>
 		</div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style>
-	template{
-		
-		
-	}
 	
 	.body{
 	background-color:rgb(62, 16, 88);
