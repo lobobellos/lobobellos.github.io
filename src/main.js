@@ -9,9 +9,6 @@ import Home from  "./pages/Home.vue";
 import Partner from "./pages/Partner.vue";
 import Partners from  "./pages/Partners.vue";
 
-
-
-
 const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/contact", name: "Contact", component: Contact },
