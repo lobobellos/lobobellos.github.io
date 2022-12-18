@@ -33,8 +33,10 @@ jobs:
         run: npm run build 
       - name: copy to 404
         run: cp dist/index.html dist/404.html
-      - name: copy in sitemap
+      - name: cp sitemap
         run: cp sitemap.xml dist/sitemap.xml
+      - name: cp robots.txt
+        run: cp robots.txt dist/robots.txt
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
