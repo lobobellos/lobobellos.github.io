@@ -3,7 +3,7 @@
     <img src="../assets/teamLogo.png" alt="team logo" >
     <div class="title">
         <h1>FIRST Robotics Team 7243</h1>
-        <h3>Robo Lobo Bellos</h3>
+        <p>Robo Lobo Bellos</p>
     </div>
   </div>
 </template>
@@ -13,6 +13,10 @@
 </script>
 
 <style scoped>
+
+p{
+  font-size: medium;
+}
 .header{
     display:flex;
     
