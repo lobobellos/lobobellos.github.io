@@ -10,7 +10,7 @@
 
 		
 
-		<iframe src="https://www.youtube.com/embed/akLmtVX5skA" title="Qualification 59 - 2022 Utah Regional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe src="" title="Qualification 59 - 2022 Utah Regional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 			<p>Our team competes in FRC, the FIRST Robotics Competition. Each year, our team designs, builds, programs, and tests a new robot, which is able to complete tasks and score points on the game field.</p>
 		
@@ -19,6 +19,12 @@
 
 <script setup>
 
+
+	window.onload = ()=>{
+		(document.querySelector('iframe'))
+		.src= 'https://www.youtube.com/embed/akLmtVX5skA'
+		
+	}
 </script>
 
 <style scoped>
