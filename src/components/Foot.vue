@@ -9,17 +9,17 @@
         <div class="columnContainer">
             <div class="column">
                 <p>Social Media</p>
-								<div class='images'>
-									<a href="https://github.com/lobobellos"><img src="../assets/github.png" alt="github" id="github"></a>
-							<a href="https://instagram.com/robolobobellos"><img src="../assets/instagram.webp" alt="instagram"></a>
-								</div>
+                <div class='images'>
+                    <a href="https://github.com/lobobellos"><img src="../assets/github.png" alt="github" id="github"></a>
+                    <a href="https://instagram.com/robolobobellos"><img src="../assets/instagram.webp" alt="instagram"></a>
+                </div>
             </div>
             <div class="column">
                 <p>Materials</p>
-                    <a href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing">Team Contract</a><br>
-										<a href="/assets/structure.af87e0b0.png" target='_blank'>Team Structure</a>
-										<img src='@/assets/structure.png' style='display: none;'><br>
-                    <br>
+                <a href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing">Team Contract</a><br>
+                <a href="/assets/structure.af87e0b0.png" target='_blank'>Team Structure</a>
+                <img src='@/assets/structure.png' style='display: none;'><br>
+                <br>
             </div>
             <div class="column">
                 <p>Info for Sponsors</p>
