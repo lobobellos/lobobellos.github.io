@@ -1,9 +1,11 @@
 <template>
   <div class="header" >
-    <img src="../assets/teamLogo.png" alt="team logo" >
+    <router-link to="/">
+      <img src="../assets/teamLogo.png" alt="team logo" >
+    </router-link>
     <div class="title">
         <h1>FIRST Robotics Team 7243</h1>
-        <h3>Robo Lobo Bellos</h3>
+        <p>Robo Lobo Bellos</p>
     </div>
   </div>
 </template>
@@ -13,6 +15,10 @@
 </script>
 
 <style scoped>
+
+p{
+  font-size: medium;
+}
 .header{
     display:flex;
     
