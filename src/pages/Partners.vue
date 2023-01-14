@@ -7,13 +7,13 @@
 			<div class='images'>
 				<img src='../assets/comcast.jpg' id="comcast">
 				<img src='../assets/NREL.png'>
+				<img src = "https://nec.dpsk12.org/wp-content/uploads/sites/147/NortheastEarlyCollegeLogo-01-scaled.jpg">
 
 			</div>
 
 			<h3>Beta Wolf Partners: $2499-$1000</h3>
 			<hr>
 			<div class='images'>
-				<img src = "https://nec.dpsk12.org/wp-content/uploads/sites/147/NortheastEarlyCollegeLogo-01-scaled.jpg">
 				<img src='https://coloradosucceeds.org/wp-content/uploads/2019/01/WBL_Partners_DPSCareerConnect-300x200.jpg'>
 			</div>
 
