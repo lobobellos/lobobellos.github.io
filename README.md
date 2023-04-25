@@ -1,7 +1,10 @@
-# frc7243.org
+# 
 
-yo i think itsa website
+Website for FRC team 7243, the robo-lobo-bellos.
 
-some lame high-school dude made it
+we might eventually purchace a domain, but we often struggle to get enough funding for robot parts, so that's not going to happen in the near future.
 
-kinda mid ngl
+domain ideas
+- frc7243.org
+- robolobos.org
+- co7243.org
