@@ -18,7 +18,7 @@
         on slanted surfaces.
       </p>
     </div>
-    <img src="../assets/robot-2023.jpg" alt="2023 robot" srcset="">
+    <img src="../assets/robots/robot-2023.jpg" alt="2023 robot" srcset="">
     <div>
       <h2>2022: Kronos</h2>
       <p>
@@ -34,7 +34,7 @@
         score points in the endgame.
       </p>
     </div>
-    <img src="../assets/robot-2022.jpg" alt="2023 robot" srcset="">
+    <img src="../assets/robots/robot-2022.jpg" alt="2023 robot" srcset="">
   </div>
 </template>
 
