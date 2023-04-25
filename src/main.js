@@ -8,6 +8,7 @@ import First from "./pages/First.vue";
 import Home from  "./pages/Home.vue";
 import Partner from "./pages/Partner.vue";
 import Partners from  "./pages/Partners.vue";
+import Robots from  "./pages/Robots.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -15,6 +16,7 @@ const routes = [
   { path: "/first", component: First },
 	{ path: "/partners", component: Partners },
 	{ path: "/partner", component: Partner },
+  { path: "/robots", component: Robots },
 ];
 
 const router = createRouter({
