@@ -1,11 +1,45 @@
 <template>
   <h1>Robots</h1>
   <hr>
-  <div class="robotinfo">
-    <div>
-      <h2>2023: Nikola</h2>
-      <p>
-        Nikola is by far our most mechanically
+  <div class="container">
+
+    <div v-for="item in items">
+      <div class="robotinfo" :style="{
+        backgroundImage: 'url(' + item.imageUrl + ')',
+        width: '300px',
+        height: '400px',
+      }">
+        <div class="darkenbox">
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import robot2022 from "../assets/robots/robot-2022.jpg";
+import robot2023 from "../assets/robots/robot-2023.jpg";
+
+interface Item {
+  imageUrl: string;
+  title: string;
+  description: string;
+}
+
+interface data {
+  items: Item[];
+}
+
+export default {
+  data(): data {
+    return {
+      items: [
+        {
+          imageUrl: robot2023,
+          title: '2023: Nikola',
+          description: `Nikola is by far our most mechanically
         comblex robot. It uses a holonomic 
         mecanum drivebase to traverse the 
         game field, and a 2-joint arm, along
@@ -15,67 +49,83 @@
         pneumatic foot subsystem, which pushes
         a textured rubber brake into the ground,
         which stops the robot from moving, even
-        on slanted surfaces.
-      </p>
-    </div>
-    <img src="../assets/robots/robot-2023.jpg" alt="2023 robot" srcset="">
-    <div>
-      <h2>2022: Kronos</h2>
-      <p>
-        Kronos used a holonomic drivebase to 
+        on slanted surfaces.`
+        },
+        {
+          imageUrl: robot2022,
+          title: '2022: Kronos',
+          description: `Kronos used a holonomic drivebase to
         navigate the field with ease,
-        and a multiple chain-driven axles, 
-        which were capable of intaking game 
-        pieces, and shooting them into the air, 
+        and a multiple chain-driven axles,
+        which were capable of intaking game
+        pieces, and shooting them into the air,
         to score points. Secondarily, Kronos used
         a Limelight 2+ to track parts of the game field,
         and align the robot with targets.
         Finally, it used a climbing mechanism to
-        score points in the endgame.
-      </p>
-    </div>
-    <img src="../assets/robots/robot-2022.jpg" alt="2023 robot" srcset="">
-  </div>
-</template>
+        score points in the endgame.`
+        }
+      ]
+    };
+  }
+}
+</script>
 
 <style scoped>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Figtree, sans-serif;
+  color: white;
+}
 
-  h1,h2,h3,h4,h5,h6,p{
-    font-family: Figtree, sans-serif;
-    color: white;
-  }
+h1 {
+  text-align: center;
+}
 
-  h1{
-    text-align: center;
-  }
+hr {
+  width: 80%;
+}
 
-  hr{
-    width: 80%;
-  }
-  .robotinfo {
-    display: flex;
-    margin-left: 30%;
-    margin-right: 30%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .robotinfo img {
-    width: 80%;
-    min-width: 350px;
-    transition: 500ms;
-  }
+.robotinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  
+  background-size: cover;
+  background-position: center;
+}
 
-  .robotinfo img:hover{
-    
-    border: 2px solid white;
-    border-radius: 3px;
-  }
+.robotinfo .darkenbox {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 400px;
+}
 
-  .robotinfo div {
-    min-width: 400px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.robotinfo p {
+  color: transparent;
+  transition: 100ms;
+}
+
+.robotinfo:hover p {
+  color: white;
+  transition: color 500ms ease-in-out;
+}
+
+.robotinfo:hover .darkenbox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 </style>
 
