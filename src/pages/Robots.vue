@@ -19,8 +19,9 @@
 </template>
 
 <script lang="ts">
-import robot2022 from "../assets/robots/robot-2022.jpg";
 import robot2023 from "../assets/robots/robot-2023.jpg";
+import robot2022 from "../assets/robots/robot-2022.jpg";
+import robot2020 from "../assets/robots/robot-2020.jpg";
 
 interface Item {
   imageUrl: string;
@@ -48,7 +49,7 @@ export default {
         game pieces. Finally, Nikola has a 
         pneumatic foot subsystem, which pushes
         a textured rubber brake into the ground,
-        which stops the robot from moving, even
+        stopping the robot from moving, even
         on slanted surfaces.`
         },
         {
@@ -64,6 +65,11 @@ export default {
         and align the robot with targets.
         Finally, it used a climbing mechanism to
         score points in the endgame.`
+        },
+        {
+          imageUrl: robot2020,
+          title: '2020: B4By',
+          description: `used mechanisms to do things`
         }
       ]
     };
@@ -96,22 +102,24 @@ hr {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .robotinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex:auto;
+  flex-grow: 2;
   min-width: 250px;
+  margin: 1rem;
   
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .robotinfo .darkenbox {
   padding-left: 5%;
   padding-right: 5%;
-  height: 400px;
+  height: inherit;
 }
 
 .robotinfo p {
@@ -121,10 +129,11 @@ hr {
 
 .robotinfo:hover p {
   color: white;
-  transition: color 500ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 .robotinfo:hover .darkenbox {
+  transition: background-color 200ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
 }
 </style>
