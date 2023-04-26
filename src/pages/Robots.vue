@@ -67,12 +67,15 @@
   }
 
   .robotinfo img:hover{
+    
     border: 2px solid white;
     border-radius: 3px;
   }
 
   .robotinfo div {
     min-width: 400px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 </style>
 
