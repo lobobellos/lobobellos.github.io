@@ -29,12 +29,10 @@ interface Item {
   description: string;
 }
 
-interface data {
-  items: Item[];
-}
+
 
 export default {
-  data(): data {
+  data(): {items: Item[]} {
     return {
       items: [
         {
