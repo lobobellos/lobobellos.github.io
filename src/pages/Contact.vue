@@ -4,26 +4,47 @@
 
 
 	<div class='people'>
-		<div>
-			<h3>Maryam Rahimie</h3>
-			<h4>Team Affairs</h4>
-			<h4>m.rhimie2@gmail.com</h4>
-
-			<h4>(720)-276-3416 (cell)</h4>
-		</div>
-		<div>
-			<h3>Robert Davis Jr</h3>
-			<h4>Team Affairs</h4>
-			<h4>rob2davis2@gmail.com</h4>
-			<h4>(720)-815-8794 (cell)</h4>
-		</div>
-		<div>
-			<h3>Matthew Lapaire</h3>
-			<h4>Lead Mentor</h4>
-			<h4>matthew_lapaire@dpsk12.net</h4>
+		<div v-for="p in people">
+			<h3>{{p.name}}</h3>
+			<h4>{{ p.title }}</h4>
+			<h4>{{ p.email }}</h4>
+			<h4>{{ p.phone }}</h4>
 		</div>
 	</div>
 </template>
+
+<script lang=" ts">
+
+
+
+
+export default {
+	data() {
+		return {
+			people: [
+				{
+					name: 'Maryam Rahimie',
+					title: 'Team Affairs',
+					email: 'm.rhimie2@gmail.com',
+					phone: '720-276-3416',
+				},
+				{
+					name: 'Robert Davis Jr',
+					title: 'Team Affairs',
+					email: 'rob2davis2@gmail.com',
+					phone: '720-815-8794',
+				},
+				{
+					name: 'Matthew Lapaire',
+					title: 'Lead Mentor',
+					email: 'matthew_lapaire@dpsk12.net',
+				}
+			]
+		}
+	}
+}
+
+</script>
 
 <style>
 .body {
