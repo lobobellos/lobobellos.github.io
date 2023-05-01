@@ -9,7 +9,7 @@
 	</div>
 </template>
 
-<script>
+<script lang="ts">
 import Top from './components/Top.vue'
 import Navbar from './components/Navbar.vue'
 import Foot from './components/Foot.vue'
