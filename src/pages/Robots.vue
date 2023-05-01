@@ -22,6 +22,7 @@
 import robot2023 from "../assets/robots/robot-2023.jpg";
 import robot2022 from "../assets/robots/robot-2022.jpg";
 import robot2020 from "../assets/robots/robot-2020.jpg";
+import robot2018 from "../assets/robots/robot-2018.jpg";
 
 interface Item {
   imageUrl: string;
@@ -67,6 +68,11 @@ export default {
         {
           imageUrl: robot2020,
           title: '2020: B4By',
+          description: `used mechanisms to do things`
+        },
+        {
+          imageUrl: robot2018,
+          title: '2018: jessica',
           description: `used mechanisms to do things`
         }
       ]
