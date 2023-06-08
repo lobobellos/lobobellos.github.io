@@ -15,7 +15,7 @@
 	</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 window.onload = () => {
 	(document.querySelector('iframe'))
 		.src = 'https://www.youtube.com/embed/akLmtVX5skA'
