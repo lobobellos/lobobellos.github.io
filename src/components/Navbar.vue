@@ -26,57 +26,53 @@
 	</div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .navbar {
 	background-color: rgb(46, 46, 46);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.navbar a div {
-	flex: 20%;
-	background-color: rgb(46, 46, 46);
-	color: whitesmoke;
-	padding: 1rem;
-	padding-top: 0.75rem;
-	min-width: 75px;
-	font-size: 1.3rem;
-	transition: 300ms;
-	font-family: 'Oswald', sans-serif;
-}
-
-.navbar a:link {
-	text-decoration: none;
-}
-.navbar a:visited {
-	text-decoration: none;
-}
-.navbar a:hover {
-	text-decoration: none;
-}
-.navbar a:active {
-	text-decoration: none;
-}
-.navbar a div:hover {
-	background-color: rgb(109, 56, 122);
+	a div {
+		flex: 20%;
+		background-color: rgb(46, 46, 46);
+		color: whitesmoke;
+		padding: 1rem;
+		padding-top: 0.75rem;
+		min-width: 75px;
+		font-size: 1.3rem;
+		transition: 300ms;
+		font-family: 'Oswald', sans-serif;
+	}
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	a div:hover {
+		background-color: rgb(109, 56, 122);
+	}
 }
 
 .custom-shape-divider-top-1660162422 {
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
-}
-
-.custom-shape-divider-top-1660162422 svg {
-	position: relative;
-	display: block;
-	width: calc(150% + 1.3px);
-	height: 80px;
-	background-color: rgb(62, 16, 88);
-}
-
-.custom-shape-divider-top-1660162422 .shape-fill {
-	fill: rgb(46, 46, 46);
+	svg {
+		position: relative;
+		display: block;
+		width: calc(150% + 1.3px);
+		height: 80px;
+		background-color: rgb(62, 16, 88);
+	}
+	.shape-fill {
+		fill: rgb(46, 46, 46);
+	}
 }
 </style>

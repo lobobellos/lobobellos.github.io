@@ -28,8 +28,8 @@ p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		img {
+			border-radius: 10%;
 			width: 60%;
 			margin: auto;
 			display: block;
@@ -43,7 +43,6 @@ p {
 		font-family: 'Open Sans', sans-serif;
 	}
 }
-
 h1,
 h3 {
 	text-align: left;

@@ -62,65 +62,55 @@
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(150% + 1.3px);
+		height: 80px;
+		background-color: rgb(42, 42, 42);
+	}
+	.shape-fill {
+		fill: rgb(62, 16, 88);
+	}
 }
-
-.custom-shape-divider-top-1660162422 svg {
-	position: relative;
-	display: block;
-	width: calc(150% + 1.3px);
-	height: 80px;
-	background-color: rgb(42, 42, 42);
-}
-
-.custom-shape-divider-top-1660162422 .shape-fill {
-	fill: rgb(62, 16, 88);
-}
-
 .main {
 	background-color: rgb(42, 42, 42);
 	padding-bottom: 15px;
 }
-
 .columnContainer {
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 25px;
 	padding-right: 25px;
 }
-
 .column {
 	flex-grow: 4;
 	text-align: center;
 	a {
-	text-align: center;
-	color: orange;
-	font-family: 'Figtree', sans-serif;
-	font-size: small;
+		text-align: center;
+		color: orange;
+		font-family: 'Figtree', sans-serif;
+		font-size: small;
+	}
 }
-}
-
 p {
 	color: white;
 	font-family: 'Figtree', sans-serif;
 	text-align: center;
 }
-
 img {
 	display: block;
 	width: 25px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
-
 .images {
 	display: flex;
 	justify-content: center;
 }
-
 #github {
 	filter: invert(100%);
 }
-
 #copyright {
 	text-align: center;
 	margin-bottom: 0px;
