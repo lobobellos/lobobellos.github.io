@@ -25,10 +25,13 @@
 	</div>
 </template>
 
-<script setup lang="ts">
-window.onload = () => {
-	document.querySelector('iframe').src =
-		'https://www.youtube.com/embed/akLmtVX5skA'
+<script lang="ts">
+export default {
+	name: 'Home',
+	mounted() {
+		document.querySelector('iframe').src =
+			'https://www.youtube.com/embed/akLmtVX5skA'
+	},
 }
 </script>
 
@@ -40,19 +43,16 @@ window.onload = () => {
 	color: white;
 	font-family: 'Figtree', sans-serif;
 }
-
 img {
 	width: 80%;
 	margin-bottom: 30px;
 	max-width: 400px;
 }
-
 p {
 	width: 80%;
 	margin: auto;
 	max-width: 600px;
 }
-
 iframe {
 	width: 500px;
 	height: 300px;
