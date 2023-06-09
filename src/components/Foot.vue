@@ -57,9 +57,7 @@
 	</div>
 </template>
 
-<script setup></script>
-
-<style scoped>
+<style scoped lang="scss">
 .custom-shape-divider-top-1660162422 {
 	width: 100%;
 	overflow: hidden;
@@ -93,6 +91,12 @@
 .column {
 	flex-grow: 4;
 	text-align: center;
+	a {
+	text-align: center;
+	color: orange;
+	font-family: 'Figtree', sans-serif;
+	font-size: small;
+}
 }
 
 p {
@@ -100,6 +104,7 @@ p {
 	font-family: 'Figtree', sans-serif;
 	text-align: center;
 }
+
 img {
 	display: block;
 	width: 25px;
@@ -114,13 +119,6 @@ img {
 
 #github {
 	filter: invert(100%);
-}
-
-.column a {
-	text-align: center;
-	color: orange;
-	font-family: 'Figtree', sans-serif;
-	font-size: small;
 }
 
 #copyright {
