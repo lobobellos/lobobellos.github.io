@@ -7,7 +7,6 @@
 				</a>
 				<h1>Vision and Mission</h1>
 			</div>
-
 			<iframe
 				frameborder="0"
 				height="315"
@@ -20,9 +19,7 @@
 				"
 				width="560"
 			></iframe>
-
 			<h3>Mission</h3>
-
 			<p>
 				The mission of&nbsp;
 				<em>
@@ -35,12 +32,10 @@
 				innovation, and that foster well-rounded life capabilities including
 				self-confidence, communication, and leadership.
 			</p>
-
 			<h3>
 				<br />
 				Vision
 			</h3>
-
 			<blockquote>
 				<p>
 					<em>
@@ -51,12 +46,10 @@
 					&nbsp; Dean Kamen, Founder
 				</p>
 			</blockquote>
-
 			<h3>
 				<br />
 				Methodology
 			</h3>
-
 			<p>
 				Engage
 				<a href="https://www.firstinspires.org/about/at-a-glance">
@@ -66,7 +59,6 @@
 				become science and technology leaders, as well as well-rounded
 				contributors to society.
 			</p>
-
 			<p>
 				<em>FIRST</em>
 				works because our programs use strategies known to increase student
@@ -82,12 +74,10 @@
 				communication, preparing them for success in school and the workforce,
 				no matter what path they take.
 			</p>
-
 			<h3>
 				<br />
 				Founder
 			</h3>
-
 			<p>
 				<a
 					href="https://www.firstinspires.org/node/2541"
@@ -109,44 +99,37 @@
 	</div>
 </template>
 
-<script>
-export default {}
-</script>
+<style lang="scss">
+a {
 
-<style>
+    color: orange;
+    font-family: 'Figtree', sans-serif;
+    font-size: small;
+}
 .body {
 	background-color: rgb(62, 16, 88);
 	text-align: center;
+    .textContainer {
+        width: 80%;
+        margin: auto;
+        max-width: 600px;
+    }
+    .textContainer {
+        color: white;
+        font-family: 'Figtree', sans-serif;
+    }
 }
-
-.body .textContainer {
-	width: 80%;
-	margin: auto;
-	max-width: 600px;
-}
-
-.body .textContainer {
-	color: white;
-	font-family: 'Figtree', sans-serif;
-}
-
 .titleContainer {
 	display: flex;
 	margin-bottom: 5%;
-	vertical-align: middle;
-}
-
-.titleContainer img {
-	width: 50%;
-	min-width: 120px;
-}
-
-.titleContainer h1 {
-	margin-top: auto;
-}
-
-.body .textContainer p a:link {
-	text-decoration: underline;
-	color: white;
+	align-items: center;
+    justify-content: center;
+    img {
+        width: 50%;
+        min-width: 120px;
+    }
+    h1 {
+        margin:0;
+    }
 }
 </style>
