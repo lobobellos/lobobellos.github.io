@@ -12,7 +12,6 @@
 			.
 		</h3>
 		<br />
-
 		<div class="tiers">
 			<div>
 				<h3>Alpha Wolf Tier</h3>
@@ -52,31 +51,26 @@
 	</div>
 </template>
 
-<script setup></script>
-
-<style scoped>
+<style scoped lang="scss">
 .body {
 	background-color: rgb(62, 16, 88);
 	display: block;
 }
-
-h3 {
-	color: white;
-	font-family: 'Figtree', sans-serif;
-	width: 80%;
-	margin: auto;
-	max-width: 600px;
-}
-
+h2,
+h3,
 h4 {
 	color: white;
 	font-family: 'Figtree', sans-serif;
 	width: 80%;
 	margin: auto;
 	max-width: 600px;
+	text-align: center;
 }
 
-#contactLink,
+h2{
+	margin-bottom: 1rem;
+}
+
 a {
 	color: orange;
 }
@@ -85,14 +79,13 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.tiers div {
-	text-align: center;
-	border: 4px outset rgb(100, 100, 100);
-	margin: 15px;
-	padding: 15px;
-	min-width: 285px;
+	div {
+		text-align: center;
+		border: 4px outset rgb(100, 100, 100);
+		margin: 15px;
+		padding: 15px;
+		min-width: 285px;
+	}
 }
 
 li {

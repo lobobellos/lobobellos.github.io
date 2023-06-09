@@ -99,37 +99,35 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 a {
-
-    color: orange;
-    font-family: 'Figtree', sans-serif;
-    font-size: small;
+	color: orange;
+	font-family: 'Figtree', sans-serif;
 }
 .body {
 	background-color: rgb(62, 16, 88);
 	text-align: center;
-    .textContainer {
-        width: 80%;
-        margin: auto;
-        max-width: 600px;
-    }
-    .textContainer {
-        color: white;
-        font-family: 'Figtree', sans-serif;
-    }
+	.textContainer {
+		width: 80%;
+		margin: auto;
+		max-width: 600px;
+	}
+	.textContainer {
+		color: white;
+		font-family: 'Figtree', sans-serif;
+	}
 }
 .titleContainer {
 	display: flex;
 	margin-bottom: 5%;
 	align-items: center;
-    justify-content: center;
-    img {
-        width: 50%;
-        min-width: 120px;
-    }
-    h1 {
-        margin:0;
-    }
+	justify-content: center;
+	img {
+		width: 50%;
+		min-width: 120px;
+	}
+	h1 {
+		margin: 0;
+	}
 }
 </style>
