@@ -1,11 +1,9 @@
 <template>
 	<h2>Contact Us</h2>
 	<h3>Multiple team representatives would love to get in contact with you</h3>
-
-
-	<div class='people'>
+	<div class="people">
 		<div v-for="p in people">
-			<h3>{{p.name}}</h3>
+			<h3>{{ p.name }}</h3>
 			<h4>{{ p.title }}</h4>
 			<h4>{{ p.email }}</h4>
 			<h4>{{ p.phone }}</h4>
@@ -13,11 +11,7 @@
 	</div>
 </template>
 
-<script lang=" ts">
-
-
-
-
+<script lang="ts">
 export default {
 	data() {
 		return {
@@ -38,12 +32,11 @@ export default {
 					name: 'Matthew Lapaire',
 					title: 'Lead Mentor',
 					email: 'matthew_lapaire@dpsk12.net',
-				}
-			]
+				},
+			],
 		}
-	}
+	},
 }
-
 </script>
 
 <style>
@@ -51,7 +44,6 @@ export default {
 	background-color: rgb(62, 16, 88);
 
 	display: flex;
-
 }
 
 h2 {
@@ -67,11 +59,11 @@ h3 {
 }
 
 .left {
-	flex: 25%
+	flex: 25%;
 }
 
 .right {
-	flex: 25%
+	flex: 25%;
 }
 
 table {
@@ -85,7 +77,6 @@ table {
 td {
 	border-bottom: 2px solid white;
 	padding-bottom: 10px;
-
 }
 
 .bottom td {

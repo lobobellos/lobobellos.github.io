@@ -2,8 +2,6 @@
 	<div>
 		<top />
 		<navbar />
-
-
 		<router-view></router-view>
 		<foot />
 	</div>
@@ -15,13 +13,13 @@ import Navbar from './components/Navbar.vue'
 import Foot from './components/Foot.vue'
 
 export default {
-	name: "App",
+	name: 'App',
 	components: {
 		Top,
 		Navbar,
 		Foot,
 	},
-};
+}
 </script>
 
 <style>

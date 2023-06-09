@@ -3,38 +3,36 @@
 		<h2>Our Partners</h2>
 
 		<h3>Alpha Wolf Partners: $2500+</h3>
-		<hr>
-		<div class='images'>
-			<img src='../assets/comcast.jpg' id="comcast">
-			<img src='../assets/NREL.png'>
-			<img src="https://nec.dpsk12.org/wp-content/uploads/sites/147/NortheastEarlyCollegeLogo-01-scaled.jpg">
-
+		<hr />
+		<div class="images">
+			<img src="../assets/comcast.jpg" id="comcast" />
+			<img src="../assets/NREL.png" />
+			<img
+				src="https://nec.dpsk12.org/wp-content/uploads/sites/147/NortheastEarlyCollegeLogo-01-scaled.jpg"
+			/>
 		</div>
 
 		<h3>Beta Wolf Partners: $2499-$1000</h3>
-		<hr>
-		<div class='images'>
-			<img src='https://coloradosucceeds.org/wp-content/uploads/2019/01/WBL_Partners_DPSCareerConnect-300x200.jpg'>
+		<hr />
+		<div class="images">
+			<img
+				src="https://coloradosucceeds.org/wp-content/uploads/2019/01/WBL_Partners_DPSCareerConnect-300x200.jpg"
+			/>
 		</div>
 
 		<h3>Delta Wolf Partners: $999-$500</h3>
-		<hr>
+		<hr />
 		<ul>
 			<li>You?</li>
 		</ul>
 
 		<h3>Wolf Cub Partners: $499-$1</h3>
-		<hr>
+		<hr />
 		<ul>
 			<li>You?</li>
 		</ul>
-
 	</div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .body {
