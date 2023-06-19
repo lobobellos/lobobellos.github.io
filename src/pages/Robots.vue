@@ -68,12 +68,12 @@ export default {
 				{
 					imageUrl: robot2020,
 					title: '2020: B4By',
-					description: `used mechanisms to do things`,
+					description: ``,
 				},
 				{
 					imageUrl: robot2018,
 					title: '2018: jessica',
-					description: `used mechanisms to do things`,
+					description: ``,
 				},
 			],
 		}
@@ -81,7 +81,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 h1,
 h2,
 h3,
@@ -118,26 +118,24 @@ hr {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	.darkenbox {
+		padding-left: 5%;
+		padding-right: 5%;
+		height: inherit;
+	}
+	p {
+		color: transparent;
+		transition: 100ms;
+	}
 }
-
-.robotinfo .darkenbox {
-	padding-left: 5%;
-	padding-right: 5%;
-	height: inherit;
-}
-
-.robotinfo p {
-	color: transparent;
-	transition: 100ms;
-}
-
-.robotinfo:hover p {
-	color: white;
-	transition: color 200ms ease-in-out;
-}
-
-.robotinfo:hover .darkenbox {
-	transition: background-color 200ms ease-in-out;
-	background-color: rgba(0, 0, 0, 0.5);
+.robotinfo:hover{
+	p {
+		color: white;
+		transition: color 200ms ease-in-out;
+	}
+	.darkenbox {
+		transition: background-color 200ms ease-in-out;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
 </style>
