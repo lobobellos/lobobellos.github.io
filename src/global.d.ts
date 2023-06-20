@@ -1,5 +1,12 @@
-declare module '*.jpg';
-declare module '*.png';
+declare module '*.jpg' {
+  const value: string
+  export default value
+};
+declare module '*.png'{
+  const value: string
+  export default value
+};
+
 
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
