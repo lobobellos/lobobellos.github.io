@@ -23,7 +23,7 @@
 </template>
 
 <script type="module" lang="ts">
-import { tiers } from '../data/partnerBenefits.js'
+import { tiers } from '../data/partnerBenefits'
 export default {
 	data() {
 		return {
