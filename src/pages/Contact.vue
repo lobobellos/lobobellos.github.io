@@ -6,7 +6,7 @@
 			<h3>{{ p.name }}</h3>
 			<h4>{{ p.title }}</h4>
 			<a :href="'mailto:'+ p.email"><h4>{{ p.email }}</h4></a>
-			<h4>{{ p.phone }}</h4>
+			<a :href="'tel:+1'+p.phone"><h4>{{ p.phone }}</h4></a>
 		</div>
 	</div>
 </template>
@@ -19,9 +19,6 @@ export default {
 			people
 		}
 	},
-	computed: {
-
-	}
 }
 </script>
 
