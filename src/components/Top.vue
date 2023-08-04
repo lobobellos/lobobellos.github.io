@@ -20,10 +20,13 @@ p {
 		width: auto;
 		color: whitesmoke;
 		font-family: 'Open Sans', sans-serif;
+		h1{
+			margin-top:0px;
+		}
+		p {
+			margin-bottom:0.5rem
+		}
 	}
 }
-h1,
-h3 {
-	text-align: left;
-}
+
 </style>
