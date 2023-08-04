@@ -22,10 +22,10 @@ import teamStructure from '../assets/structure.png'
 			<div class="column">
 				<p>Social Media</p>
 				<div class="images">
-					<a href="https://github.com/lobobellos">
+					<a href="https://github.com/lobobellos" target="_blank">
 						<img src="../assets/github.png" alt="github" id="github" />
 					</a>
-					<a href="https://instagram.com/robolobobellos">
+					<a href="https://instagram.com/robolobobellos" target="_blank">
 						<img src="../assets/instagram.webp" alt="instagram" />
 					</a>
 				</div>
@@ -34,6 +34,7 @@ import teamStructure from '../assets/structure.png'
 				<p>Materials</p>
 				<a
 					href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing"
+					target="_blank"
 				>
 					Team Contract
 				</a>
@@ -48,6 +49,7 @@ import teamStructure from '../assets/structure.png'
 				<p>Info for Sponsors</p>
 				<a
 					href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit?usp=sharing"
+					target="_blank"
 				>
 					Letter to Sponsors
 				</a>
