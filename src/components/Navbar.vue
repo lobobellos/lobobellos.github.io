@@ -56,7 +56,7 @@ function toggleNavBar(){
 		</div>
 		<div class="dropdown" v-if="dropdownVisible">
 			<div class="items">
-				<router-link to="/"><div>About us</div></router-link>
+				<router-link @click="()=>toggleNavBar() to="/"><div>About us</div></router-link>
 				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
 					<div>Event history</div>
 				</a>
