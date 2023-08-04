@@ -56,16 +56,17 @@ function closeNavBar(){
 			</div>
 		</div>
 		<div class="dropdown" v-if="dropdownVisible">
-			
-			<router-link to="/"><div>About us</div></router-link>
-			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
-				<div>Event history</div>
-			</a>
-			<router-link @click="()=>closeNavBar()" to="/first"><div>What is FIRST</div></router-link>
-			<router-link @click="()=>closeNavBar()" to="/robots"><div>Our Robots</div></router-link>
-			<router-link @click="()=>closeNavBar()" to="/partner"><div>Become a Partner</div></router-link>
-			<router-link @click="()=>closeNavBar()" to="/partners"><div>Our Partners</div></router-link>
-			<router-link @click="()=>closeNavBar()" to="/contact"><div>Contact us</div></router-link>
+			<div class="items">
+				<router-link to="/"><div>About us</div></router-link>
+				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+					<div>Event history</div>
+				</a>
+				<router-link @click="()=>closeNavBar()" to="/first"><div>What is FIRST</div></router-link>
+				<router-link @click="()=>closeNavBar()" to="/robots"><div>Our Robots</div></router-link>
+				<router-link @click="()=>closeNavBar()" to="/partner"><div>Become a Partner</div></router-link>
+				<router-link @click="()=>closeNavBar()" to="/partners"><div>Our Partners</div></router-link>
+				<router-link @click="()=>closeNavBar()" to="/contact"><div>Contact us</div></router-link>
+			</div>
 		</div>
 	</div>
 
@@ -127,8 +128,6 @@ function closeNavBar(){
 				font-size: 1.3rem;
 				transition: 300ms;
 				font-family: 'Oswald', sans-serif;
-
-
 				background-image: linear-gradient(
 				to bottom,
 				rgb(46, 46, 46) 50%,
@@ -144,38 +143,42 @@ function closeNavBar(){
 		}
 	}
 }
-
 .dropdown{
 	background-color: rgb(46, 46, 46);
 	position:absolute;
 	z-index:2;
-	display:relative;
 	right:0px;
 	width:max-content;
-	flex-direction:column;
 	padding-left:0.5rem;
 	padding-right:0.5rem;
 	border-bottom-left-radius: 3rem;
-	a {
-		div{
-			text-align:center;
-			background-image: linear-gradient(
-			to right,
-			rgb(46, 46, 46) 50%,
-			blueviolet 50%,
-			); /* Set gradient to new color */
-			background-size: 200% 100%; /* Set size of gradient */
-			transition: background-position 0.3s; /* Set transition duration */
-			border-radius:0.5rem;
-			&:hover {
-				background-position: -100% -0%; /* Move gradient upwards */
+	.items{
+		display:flex;
+		flex-direction:column;
+		padding-bottom:1rem;
+		a {
+			margin-top:1rem;
+			margin-left:1rem;
+			margin-right:1rem;
+			font-size:1.2rem;
+			text-decoration:none;
+			color: whitesmoke;
+			font-family: 'Oswald', sans-serif;
+			div{
+				text-align:center;
+				background-image: linear-gradient(
+				to right,
+				rgb(46, 46, 46) 50%,
+				blueviolet 50%,
+				); /* Set gradient to new color */
+				background-size: 200% 100%; /* Set size of gradient */
+				transition: background-position 0.3s; /* Set transition duration */
+				border-radius:0.5rem;
+				&:hover {
+					background-position: -100% -0%; /* Move gradient upwards */
+				}
 			}
 		}
-		padding:0.5rem;
-		font-size:1.2rem;
-		text-decoration:none;
-		color: whitesmoke;
-		font-family: 'Oswald', sans-serif;
 	}
 }
 
