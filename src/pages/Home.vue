@@ -30,7 +30,7 @@ export default {
 	name: 'Home',
 	mounted() {
 		document.querySelector('iframe').src =
-			'https://www.youtube.com/embed/akLmtVX5skA'
+			'https://www.youtube.com/embed/0zpflsYc4PA'
 	},
 }
 </script>

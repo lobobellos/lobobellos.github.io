@@ -11,15 +11,8 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import {people} from '../data/contact.js'
-export default {
-	data() {
-		return {
-			people
-		}
-	},
-}
 </script>
 
 <style scoped lang="scss">

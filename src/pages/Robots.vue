@@ -20,17 +20,8 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { items } from '../data/robots';
-
-export default {
-	data(){
-		return {
-			items
-		}
-	}
-}
-
 </script>
 
 <style scoped lang="scss">

@@ -22,15 +22,8 @@
 	</div>
 </template>
 
-<script type="module" lang="ts">
+<script setup lang="ts">
 import { tiers } from '../data/partnerBenefits'
-export default {
-	data() {
-		return {
-			tiers,
-		}
-	},
-}
 </script>
 
 <style scoped lang="scss">

@@ -20,16 +20,8 @@
 
 </template>
 
-<script type="module" lang="ts">
+<script setup lang="ts">
 import { tiers } from '../data/partners.js'
-
-export default {
-	data() {
-		return {
-			tiers,
-		}
-	},
-}
 </script>
 
 <style scoped lang="scss">
