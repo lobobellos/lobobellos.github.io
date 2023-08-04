@@ -4,7 +4,7 @@
 		<Top />
 		<ShapeDivider id="divider"/>
 		<div class="router">
-			<Router-view id="rv"></router-view>
+			<Router-view ></router-view>
 		</div>
 		<Foot />
 	</div>
