@@ -4,9 +4,10 @@ import threeLines from '../assets/threeLines.png'
 import teamLogo from '../assets/teamLogo.png'
 
 const width = ref<number>(null)
-const dropdownVisible = ref(false)
 const threeLinesImg = ref<HTMLImageElement>(null)
-const rotation = ref(0)
+let rotation = 0
+const dropdownItems = ref(null)
+let translateY = -200
 
 onMounted(()=>{
 	width.value = window.innerWidth
@@ -14,13 +15,15 @@ onMounted(()=>{
 		width.value = window.innerWidth
 	})
 	threeLinesImg.value.onclick = toggleNavBar
+	dropdownItems.value.style.transform = `translateY(${translateY}%)`
 })
 
 
 function toggleNavBar(){
-	rotation.value = (-rotation.value) - 90
-	dropdownVisible.value = !dropdownVisible.value
-	threeLinesImg.value.style.transform = `rotate(${rotation.value}deg)`
+	rotation = (-rotation) - 90
+	translateY = (-translateY) -200
+	dropdownItems.value.style.transform = `translateY(${translateY}%)`
+	threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
 }
 </script>
 
@@ -33,14 +36,14 @@ function toggleNavBar(){
 		</div>
 		<div class="links">
 			<router-link to="/"><div>About us</div></router-link>
-			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
-				<div>Event history</div>
-			</a>
 			<router-link to="/first"><div>What is FIRST</div></router-link>
 			<router-link to="/robots"><div>Our Robots</div></router-link>
 			<router-link to="/partner"><div>Become a Partner</div></router-link>
 			<router-link to="/partners"><div>Our Partners</div></router-link>
 			<router-link to="/contact"><div>Contact us</div></router-link>
+			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+				<div>Event history</div>
+			</a>
 		</div>
 	</div>
 	<div v-else>
@@ -54,17 +57,17 @@ function toggleNavBar(){
 				<img :src="threeLines" ref="threeLinesImg" alt="three lines icon">
 			</div>
 		</div>
-		<div class="dropdown" v-if="dropdownVisible">
-			<div class="items">
+		<div class="dropdown" ref="dropdownItems">
+			<div class="items" >
 				<router-link @click="()=>toggleNavBar()" to="/"><div>About us</div></router-link>
-				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
-					<div>Event history</div>
-				</a>
 				<router-link @click="()=>toggleNavBar()" to="/first"><div>What is FIRST</div></router-link>
 				<router-link @click="()=>toggleNavBar()" to="/robots"><div>Our Robots</div></router-link>
 				<router-link @click="()=>toggleNavBar()" to="/partner"><div>Become a Partner</div></router-link>
 				<router-link @click="()=>toggleNavBar()" to="/partners"><div>Our Partners</div></router-link>
 				<router-link @click="()=>toggleNavBar()" to="/contact"><div>Contact us</div></router-link>
+				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+					<div>Event history</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -145,14 +148,15 @@ function toggleNavBar(){
 	}
 }
 .dropdown{
+	z-index:2;
 	background-color: rgb(46, 46, 46);
 	position:absolute;
-	z-index:2;
 	right:0px;
 	width:max-content;
 	padding-left:0.5rem;
 	padding-right:0.5rem;
 	border-bottom-left-radius: 3rem;
+	transition: transform 400ms ease-in-out;
 	.items{
 		display:flex;
 		flex-direction:column;
