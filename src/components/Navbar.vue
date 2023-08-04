@@ -41,14 +41,28 @@ onMounted(()=>{
 			<router-link to="/contact"><div>Contact us</div></router-link>
 		</div>
 	</div>
-	<div class="navbar" v-else>
-		<div class="imageContainer">
-			<router-link to="/">
-				<img :src="teamLogo" alt="team logo" />
-			</router-link>
+	<div v-else>
+		<div class="navbar" >
+			<div class="imageContainer">
+				<router-link to="/">
+					<img :src="teamLogo" alt="team logo" />
+				</router-link>
+			</div>
+			<div class="threeLines">
+				<img :src="threeLines" ref="threeLinesImg" alt="three lines icon">
+			</div>
 		</div>
-		<div class="threeLines">
-			<img :src="threeLines" ref="threeLinesImg" alt="three lines icon">
+		<div class="dropdown" v-if="dropdownVisible">
+			
+			<router-link to="/"><div>About us</div></router-link>
+			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+				<div>Event history</div>
+			</a>
+			<router-link to="/first"><div>What is FIRST</div></router-link>
+			<router-link to="/robots"><div>Our Robots</div></router-link>
+			<router-link to="/partner"><div>Become a Partner</div></router-link>
+			<router-link to="/partners"><div>Our Partners</div></router-link>
+			<router-link to="/contact"><div>Contact us</div></router-link>
 		</div>
 	</div>
 
@@ -127,8 +141,44 @@ onMounted(()=>{
 		a div:hover {
 			background-color: rgb(109, 56, 122);
 		}
-		
 	}
+}
+
+.dropdown{
+	background-color: rgb(46, 46, 46);
+	position:absolute;
+	z-index:2;
+	display:relative;
+	right:0px;
+	width:max-content;
+	flex-direction:column;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+	border-bottom-left-radius: 3rem;
+	a {
+		div{
+			text-align:center;
+			background-image: linear-gradient(
+			to right,
+			rgb(46, 46, 46) 50%,
+			blueviolet 50%,
+			); /* Set gradient to new color */
+			background-size: 200% 100%; /* Set size of gradient */
+			transition: background-position 0.3s; /* Set transition duration */
+			border-radius:0.5rem;
+			&:hover {
+				background-position: -100% -0%; /* Move gradient upwards */
+			}
+		}
+		padding:0.5rem;
+		font-size:1.2rem;
+		text-decoration:none;
+		color: whitesmoke;
+		font-family: 'Oswald', sans-serif;
+
+	}
+	
+	
 }
 
 .custom-shape-divider-top-1660162422 {
