@@ -13,15 +13,14 @@ onMounted(()=>{
 	window.addEventListener("resize",()=>{
 		width.value = window.innerWidth
 	})
-	threeLinesImg.value.onclick = ()=>{
-		rotation.value = (-rotation.value) - 90
-		dropdownVisible.value = !dropdownVisible.value
-		threeLinesImg.value.style.transform = `rotate(${rotation.value}deg)`
-	}	
+	threeLinesImg.value.onclick = toggleNavBar
 })
 
-function closeNavBar(){
-	dropdownVisible.value = false
+
+function toggleNavBar(){
+	rotation.value = (-rotation.value) - 90
+	dropdownVisible.value = !dropdownVisible.value
+	threeLinesImg.value.style.transform = `rotate(${rotation.value}deg)`
 }
 </script>
 
@@ -61,11 +60,11 @@ function closeNavBar(){
 				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
 					<div>Event history</div>
 				</a>
-				<router-link @click="()=>closeNavBar()" to="/first"><div>What is FIRST</div></router-link>
-				<router-link @click="()=>closeNavBar()" to="/robots"><div>Our Robots</div></router-link>
-				<router-link @click="()=>closeNavBar()" to="/partner"><div>Become a Partner</div></router-link>
-				<router-link @click="()=>closeNavBar()" to="/partners"><div>Our Partners</div></router-link>
-				<router-link @click="()=>closeNavBar()" to="/contact"><div>Contact us</div></router-link>
+				<router-link @click="()=>toggleNavBar()" to="/first"><div>What is FIRST</div></router-link>
+				<router-link @click="()=>toggleNavBar()" to="/robots"><div>Our Robots</div></router-link>
+				<router-link @click="()=>toggleNavBar()" to="/partner"><div>Become a Partner</div></router-link>
+				<router-link @click="()=>toggleNavBar()" to="/partners"><div>Our Partners</div></router-link>
+				<router-link @click="()=>toggleNavBar()" to="/contact"><div>Contact us</div></router-link>
 			</div>
 		</div>
 	</div>
