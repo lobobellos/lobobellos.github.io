@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import teamStructure from '../assets/structure.png'
+</script>
+
 <template>
 	<div class="main">
 		<div class="custom-shape-divider-top-1660162422">
@@ -34,10 +38,9 @@
 					Team Contract
 				</a>
 				<br />
-				<a href="/assets/structure.af87e0b0.png" target="_blank">
+				<a :href="teamStructure" target="_blank">
 					Team Structure
 				</a>
-				<img src="@/assets/structure.png" style="display: none" />
 				<br />
 				<br />
 			</div>
@@ -58,61 +61,61 @@
 </template>
 
 <style scoped lang="scss">
-.custom-shape-divider-top-1660162422 {
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	svg {
-		position: relative;
-		display: block;
-		width: calc(150% + 1.3px);
-		height: 80px;
-		background-color: rgb(42, 42, 42);
-	}
-	.shape-fill {
-		fill: rgb(62, 16, 88);
-	}
-}
 .main {
+	.custom-shape-divider-top-1660162422 {
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		svg {
+			position: relative;
+			display: block;
+			width: calc(150% + 1.3px);
+			height: 80px;
+			background-color: rgb(42, 42, 42);
+		}
+		.shape-fill {
+			fill: rgb(62, 16, 88);
+		}
+	}
 	background-color: rgb(42, 42, 42);
 	padding-bottom: 15px;
-}
-.columnContainer {
-	display: flex;
-	flex-wrap: wrap;
-	padding-left: 25px;
-	padding-right: 25px;
-}
-.column {
-	flex-grow: 4;
-	text-align: center;
-	a {
-		text-align: center;
-		color: orange;
-		font-family: 'Figtree', sans-serif;
-		font-size: small;
+	.columnContainer {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 25px;
+		padding-right: 25px;
+		.column {
+			flex-grow: 4;
+			text-align: center;
+			p {
+				color: white;
+				font-family: 'Figtree', sans-serif;
+				text-align: center;
+			}
+			a {
+				text-align: center;
+				color: orange;
+				font-family: 'Figtree', sans-serif;
+				font-size: small;
+			}
+			.images {
+				display: flex;
+				justify-content: center;
+				a img {
+					display: block;
+					width: 25px;
+					margin-left: 5px;
+					margin-right: 5px;
+				}
+				#github {
+					filter: invert(100%);
+				}
+			}
+		}
 	}
-}
-p {
-	color: white;
-	font-family: 'Figtree', sans-serif;
-	text-align: center;
-}
-img {
-	display: block;
-	width: 25px;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.images {
-	display: flex;
-	justify-content: center;
-}
-#github {
-	filter: invert(100%);
-}
-#copyright {
-	text-align: center;
-	margin-bottom: 0px;
+	#copyright {
+		text-align: center;
+		margin-bottom: 0px;
+	}
 }
 </style>
