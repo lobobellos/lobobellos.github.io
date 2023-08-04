@@ -1,7 +1,8 @@
 <template>
 	<div class="body">
-		<h2>Our Partners</h2>
-
+		<div class ="secHead">
+			<SectionHeader  title="Our Partners" subtitle="Our partners are some of the best in the business. Our gratitude goes out to them for their support." />
+		</div>
 		<div class="tier" v-for="tier in tiers">
 			<h3>{{ tier.title }}</h3>
 			<hr />
@@ -13,7 +14,7 @@
 			<div class="names" v-else>
 				<ul>
 					<li v-for="name in tier.names">{{ name }}</li>
-				</ul>	
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -22,9 +23,13 @@
 
 <script setup lang="ts">
 import { tiers } from '../data/partners.js'
+import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
 <style scoped lang="scss">
+.secHead{
+	margin-bottom: 3rem;
+}
 .body {
 	background-color: rgb(62, 16, 88);
 	text-align: center;
