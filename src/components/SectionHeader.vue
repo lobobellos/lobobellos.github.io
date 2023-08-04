@@ -24,6 +24,7 @@ const props = defineProps({
   }
   hr {
     width: 80%;
+    box-shadow: 0px 0px 0.5px 1px rgba(255, 255, 255, 0.367);
   }
   h3{
 	text-align: center;
