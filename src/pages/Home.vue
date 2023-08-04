@@ -35,27 +35,33 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .body {
 	background-color: rgb(62, 16, 88);
 	text-align: center;
 	display: block;
 	color: white;
 	font-family: 'Figtree', sans-serif;
-}
-img {
-	width: 80%;
-	margin-bottom: 30px;
-	max-width: 400px;
-}
-p {
-	width: 80%;
-	margin: auto;
-	max-width: 600px;
-}
-iframe {
-	width: 500px;
-	height: 300px;
-	margin-bottom: 30px;
+	img {
+		width: 80%;
+		margin-bottom: 30px;
+		max-width: 400px;
+		border-radius:3rem;
+		transition: box-shadow 500ms ease-in-out;
+
+		&:hover{
+			box-shadow: 0px 0px 10px 10px #00000040;
+		}
+	}
+	p {
+		width: 80%;
+		margin: auto;
+		max-width: 600px;
+	}
+	iframe {
+		width: 500px;
+		height: 300px;
+		margin-bottom: 30px;
+	}
 }
 </style>
