@@ -3,7 +3,9 @@
 		<Navbar />
 		<Top />
 		<ShapeDivider id="divider"/>
-		<Router-view id="rv"></router-view>
+		<div class="router">
+			<Router-view id="rv"></router-view>
+		</div>
 		<Foot />
 	</div>
 </template>
@@ -29,8 +31,10 @@ body {
 	#divider{
 		position:relative;
 	}
-	#rv{
+	.router{
+		background-color:rgb(62, 16, 88);
 		padding-top:1rem;
+		padding-bottom:0.5rem
 	}
 }
 </style>
