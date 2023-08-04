@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SectionHeader from '../components/SectionHeader.vue';
+</script>
+
 <template>
 	<div class="body">
 		<div class="textContainer">
@@ -5,7 +9,9 @@
 				<a href="https://www.firstinspires.org">
 					<img alt="FIRST" src="../assets/FIRST-logo.png" />
 				</a>
-				<h1>Vision and Mission</h1>
+				<div class="secHead">
+					<SectionHeader title="What Is FIRST?"/>
+				</div>
 			</div>
 			<iframe
 				frameborder="0"
@@ -19,7 +25,7 @@
 				"
 				width="560"
 			></iframe>
-			<h3>Mission</h3>
+			<h2>Mission</h2>
 			<p>
 				The mission of&nbsp;
 				<em>
@@ -32,10 +38,9 @@
 				innovation, and that foster well-rounded life capabilities including
 				self-confidence, communication, and leadership.
 			</p>
-			<h3>
-				<br />
+			<h2>
 				Vision
-			</h3>
+			</h2>
 			<blockquote>
 				<p>
 					<em>
@@ -46,12 +51,11 @@
 					&nbsp; Dean Kamen, Founder
 				</p>
 			</blockquote>
-			<h3>
-				<br />
+			<h2>
 				Methodology
-			</h3>
+			</h2>
 			<p>
-				Engage
+				<em>FIRST</em> Engages
 				<a href="https://www.firstinspires.org/about/at-a-glance">
 					PreK-12 (ages 4-18)&nbsp;students
 				</a>
@@ -61,7 +65,7 @@
 			</p>
 			<p>
 				<em>FIRST</em>
-				works because our programs use strategies known to increase student
+				works because of its use of strategies known to increase student
 				interest in STEM: hands-on learning, working as a team on real-life
 				problems, exposure to careers and adult mentors, emphasis on
 				<em>FIRST</em>
@@ -73,27 +77,6 @@
 				participants also develop skills in teamwork, problem solving, and
 				communication, preparing them for success in school and the workforce,
 				no matter what path they take.
-			</p>
-			<h3>
-				<br />
-				Founder
-			</h3>
-			<p>
-				<a
-					href="https://www.firstinspires.org/node/2541"
-					title="About Dean Kamen"
-				>
-					Dean Kamen
-				</a>
-				is a prolific inventor, entrepreneur, and tireless advocate for science
-				and technology. His passion and determination to help young people
-				discover the excitement and rewards of science and technology are the
-				cornerstones of
-				<em>FIRST</em>
-				. For over 30 years, Kamen has resolutely led the growth of
-				<em>FIRST</em>
-				to where it is now universally recognized as the leading, not-for-profit
-				STEM engagement program for kids worldwide.
 			</p>
 		</div>
 	</div>
