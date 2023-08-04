@@ -95,12 +95,16 @@ function closeNavBar(){
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 1rem;
 		img {
 			border-radius: 25%;
 			width: 5rem;
-			padding: 1rem;
 			margin: auto;
 			display: block;
+			transition: box-shadow 300ms ease-in-out;
+			&:hover{
+				box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.218);
+			}
 		}
 	}
 	.threeLines{
