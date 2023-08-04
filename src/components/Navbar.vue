@@ -111,6 +111,7 @@ function toggleNavBar(){
 			transition: transform 200ms ease-in-out;
 			width:3rem;
 			padding-right:2rem;
+			padding-left:2rem
 		}
 	}
 	.links {
