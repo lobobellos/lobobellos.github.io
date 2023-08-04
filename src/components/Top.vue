@@ -1,12 +1,10 @@
 <template>
 	<div class="header">
-		
 		<div class="title">
 			<h1>FIRST Robotics Team 7243</h1>
 			<p>Robo Lobo Bellos</p>
 		</div>
 	</div>
-	
 </template>
 
 <style scoped lang="scss">
