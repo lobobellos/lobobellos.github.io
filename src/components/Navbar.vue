@@ -91,13 +91,10 @@ function toggleNavBar(){
 	flex-direction: row;
 	justify-content:space-between;
 	.imageContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 1rem;
+		padding: 0.75rem;
 		img {
 			border-radius: 25%;
-			width: 5rem;
+			width: 4rem;
 			margin: auto;
 			display: block;
 			transition: box-shadow 300ms ease-in-out;
@@ -113,7 +110,7 @@ function toggleNavBar(){
 		img{
 			transition: transform 200ms ease-in-out;
 			width:3rem;
-			padding:2rem;
+			padding-right:2rem;
 		}
 	}
 	.links {
