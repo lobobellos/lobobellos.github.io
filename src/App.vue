@@ -47,4 +47,11 @@ body {
 		padding-bottom:0.5rem
 	}
 }
+iframe{
+	border-radius:1rem;
+		transition: box-shadow 500ms ease-in-out;
+		&:hover{
+			box-shadow: 0px 0px 10px 10px #00000040;
+		}
+}
 </style>
