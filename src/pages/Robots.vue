@@ -1,6 +1,5 @@
 <template>
-	<h1>Robots</h1>
-	<hr />
+	<SectionHeader title="Robots" />
 	<div class="container">
 		<div
 		v-for="item in items"
@@ -19,15 +18,10 @@
 
 <script setup lang="ts">
 import { items } from '../data/robots';
+import  SectionHeader  from '../components/SectionHeader.vue';
 </script>
 
 <style scoped lang="scss">
-h1 {
-	text-align: center;
-}
-hr {
-	width: 80%;
-}
 .container {
 	display: flex;
 	flex-direction: row;
