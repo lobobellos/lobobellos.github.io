@@ -1,8 +1,5 @@
 <template>
-	<div class="title">
-		<h2>Contact Us</h2>
-		<h3>Multiple team representatives would love to get in contact with you</h3>
-	</div>
+	<SectionHeader title="Contact" subtitle="Multiple team representatives would love to get in contact with you"/>
 	<div class="people">
 		<div v-for="p in people" class="person">
 			<h3>{{ p.name }}</h3>
@@ -14,15 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import {people} from '../data/contact.js'
+import {people} from '../data/contact.js';
+import SectionHeader from '../components/SectionHeader.vue';
 </script>
 
 <style scoped lang="scss">
-.title{
-	text-align: center;
-	margin-right:10%;
-	margin-left:10%
-}
 .people {
 	display: flex;
 	flex-wrap: wrap;
@@ -43,6 +36,10 @@ import {people} from '../data/contact.js'
 		border-radius: 3rem;
 		a{
 			text-decoration:none;
+		}
+		transition: box-shadow 500ms ease-in-out;
+		&:hover{
+			box-shadow:0px 0px 4px 5px rgba(255, 255, 255, 0.367);
 		}
 	}
 }
