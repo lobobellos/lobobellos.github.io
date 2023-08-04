@@ -115,7 +115,9 @@ function closeNavBar(){
 	.links {
 		display:flex;
 		flex-direction: row;
+		align-items:center;
 		a{
+			text-decoration: none;
 			div {
 				background-color: rgb(46, 46, 46);
 				color: whitesmoke;
@@ -125,23 +127,20 @@ function closeNavBar(){
 				font-size: 1.3rem;
 				transition: 300ms;
 				font-family: 'Oswald', sans-serif;
-			}
 
-			&:link {
-				text-decoration: none;
+
+				background-image: linear-gradient(
+				to bottom,
+				rgb(46, 46, 46) 50%,
+				blueviolet 50%,
+				); /* Set gradient to new color */
+				background-size: 100% 200%; /* Set size of gradient */
+				transition: background-position 0.3s; /* Set transition duration */
+				border-radius:0.5rem;
+				&:hover {
+					background-position: -0% -100%; /* Move gradient upwards */
+				}
 			}
-			&:visited {
-				text-decoration: none;
-			}
-			&:hover {
-				text-decoration: none;
-			}
-			&:active {
-				text-decoration: none;
-			}
-		}
-		a div:hover {
-			background-color: rgb(109, 56, 122);
 		}
 	}
 }
