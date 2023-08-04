@@ -1,14 +1,55 @@
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import threeLines from '../assets/threeLines.png'
+import teamLogo from '../assets/teamLogo.png'
+
+const width = ref<number>(null)
+const dropdownVisible = ref(false)
+const threeLinesImg = ref<HTMLImageElement>(null)
+const rotation = ref(0)
+
+onMounted(()=>{
+	width.value = window.innerWidth
+	window.addEventListener("resize",()=>{
+		width.value = window.innerWidth
+	})
+	threeLinesImg.value.onclick = ()=>{
+		rotation.value = (-rotation.value) - 90
+		dropdownVisible.value = !dropdownVisible.value
+		threeLinesImg.value.style.transform = `rotate(${rotation.value}deg)`
+	}
+})
+
+</script>
+
 <template>
-	<div class="navbar">
-		<router-link to="/"><div>About us</div></router-link>
-		<a href="http://www.thebluealliance.com/team/7243" target="_blank">
-			<div>Event history</div>
-		</a>
-		<router-link to="/first"><div>What is FIRST</div></router-link>
-		<router-link to="/robots"><div>Our Robots</div></router-link>
-		<router-link to="/partner"><div>Become a Partner</div></router-link>
-		<router-link to="/partners"><div>Our Partners</div></router-link>
-		<router-link to="/contact"><div>Contact us</div></router-link>
+	<div class="navbar" v-if="width >=1050">
+		<div class="imageContainer">
+			<router-link to="/">
+				<img :src="teamLogo" alt="team logo" />
+			</router-link>
+		</div>
+		<div class="links">
+			<router-link to="/"><div>About us</div></router-link>
+			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+				<div>Event history</div>
+			</a>
+			<router-link to="/first"><div>What is FIRST</div></router-link>
+			<router-link to="/robots"><div>Our Robots</div></router-link>
+			<router-link to="/partner"><div>Become a Partner</div></router-link>
+			<router-link to="/partners"><div>Our Partners</div></router-link>
+			<router-link to="/contact"><div>Contact us</div></router-link>
+		</div>
+	</div>
+	<div class="navbar" v-else>
+		<div class="imageContainer">
+			<router-link to="/">
+				<img :src="teamLogo" alt="team logo" />
+			</router-link>
+		</div>
+		<div class="threeLines">
+			<img :src="threeLines" ref="threeLinesImg" alt="three lines icon">
+		</div>
 	</div>
 
 	<div class="custom-shape-divider-top-1660162422">
@@ -30,33 +71,63 @@
 .navbar {
 	background-color: rgb(46, 46, 46);
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	a div {
-		flex: 20%;
-		background-color: rgb(46, 46, 46);
-		color: whitesmoke;
-		padding: 1rem;
-		padding-top: 0.75rem;
-		min-width: 75px;
-		font-size: 1.3rem;
-		transition: 300ms;
-		font-family: 'Oswald', sans-serif;
+	flex-direction: row;
+	justify-content:space-between;
+	.imageContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			border-radius: 25%;
+			width: 5rem;
+			padding: 1rem;
+			margin: auto;
+			display: block;
+		}
 	}
-	a:link {
-		text-decoration: none;
+	.threeLines{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img{
+			transition: transform 200ms ease-in-out;
+			width:3rem;
+			padding:2rem;
+		}
 	}
-	a:visited {
-		text-decoration: none;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-	a:active {
-		text-decoration: none;
-	}
-	a div:hover {
-		background-color: rgb(109, 56, 122);
+	.links {
+		display:flex;
+		flex-direction: row;
+		a{
+			div {
+				background-color: rgb(46, 46, 46);
+				color: whitesmoke;
+				padding: 1rem;
+				padding-top: 0.75rem;
+				min-width: 75px;
+				font-size: 1.3rem;
+				transition: 300ms;
+				font-family: 'Oswald', sans-serif;
+			}
+
+			&:link {
+				text-decoration: none;
+			}
+			&:visited {
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			&:active {
+				text-decoration: none;
+			}
+		}
+		a div:hover {
+			background-color: rgb(109, 56, 122);
+		}
+		
 	}
 }
 
@@ -69,7 +140,6 @@
 		display: block;
 		width: calc(150% + 1.3px);
 		height: 80px;
-		background-color: rgb(62, 16, 88);
 	}
 	.shape-fill {
 		fill: rgb(46, 46, 46);
