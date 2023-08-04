@@ -1,8 +1,9 @@
 <template>
 	<div>
-		<top />
 		<navbar />
-		<router-view></router-view>
+		<top />
+		<ShapeDivider id="divider"/>
+		<router-view id="rv"></router-view>
 		<foot />
 	</div>
 </template>
@@ -11,6 +12,7 @@
 import Top from './components/Top.vue'
 import Navbar from './components/Navbar.vue'
 import Foot from './components/Foot.vue'
+import ShapeDivider from './components/ShapeDivider.vue'
 
 export default {
 	name: 'App',
@@ -18,16 +20,27 @@ export default {
 		Top,
 		Navbar,
 		Foot,
+		ShapeDivider,
 	},
 }
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
 
 body {
 	padding: 0px;
 	margin: 0px;
-	background-color: rgb(62, 16, 88);
+	background: linear-gradient(
+		90deg,
+		rgba(102, 40, 156, 1) 0%,
+		rgba(32, 29, 56, 1) 100%
+	);
+	#divider{
+		position:relative;
+	}
+	#rv{
+		padding-top:1rem;
+	}
 }
 </style>
