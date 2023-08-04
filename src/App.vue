@@ -21,6 +21,16 @@ import ShapeDivider from './components/ShapeDivider.vue'
 @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
 
 body {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		font-family: Figtree, sans-serif;
+		color: white;
+	}
 	padding: 0px;
 	margin: 0px;
 	background: linear-gradient(
