@@ -28,6 +28,9 @@ export default defineConfig({
 	server: {
 		host: true,
 	},
+	build:{
+		minify:true,
+	},
 	plugins: [vue()],
 	resolve: {
 		alias: {
