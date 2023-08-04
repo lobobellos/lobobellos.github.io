@@ -1,28 +1,18 @@
 <template>
 	<div>
-		<navbar />
-		<top />
+		<Navbar />
+		<Top />
 		<ShapeDivider id="divider"/>
-		<router-view id="rv"></router-view>
-		<foot />
+		<Router-view id="rv"></router-view>
+		<Foot />
 	</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Top from './components/Top.vue'
 import Navbar from './components/Navbar.vue'
 import Foot from './components/Foot.vue'
 import ShapeDivider from './components/ShapeDivider.vue'
-
-export default {
-	name: 'App',
-	components: {
-		Top,
-		Navbar,
-		Foot,
-		ShapeDivider,
-	},
-}
 </script>
 
 <style lang="scss">
