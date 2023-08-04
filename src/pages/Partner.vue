@@ -1,8 +1,8 @@
 <template>
-	<h2>Become a Partner</h2>
+	<SectionHeader title="Become A Partner" subtitle="We are always looking for more partners in our quest to bring stem education
+		to today's youth!"/>
 	<h3 id="mainText">
-		We are always looking for more partners in our quest to bring stem education
-		to today's youth! Please visit our
+		 Please visit our
 		<router-link to="/contact" id="contactLink">contact</router-link>
 		page for more information, or donate on our
 		<a href="https://www.gofundme.com/f/support-our-schools-robotics-team">
@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import { tiers } from '../data/partnerBenefits'
+import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
 <style scoped lang="scss">
@@ -33,14 +34,9 @@ h3{
 	max-width: 600px;
 	text-align: center;
 }
-h2 {
-	text-align: center;
-	margin-bottom: 1rem;
-}
 a {
 	color: orange;
 }
-
 .tiers {
 	display: flex;
 	flex-wrap: wrap;
