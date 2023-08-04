@@ -27,21 +27,16 @@ import { tiers } from '../data/partnerBenefits'
 </script>
 
 <style scoped lang="scss">
-h2,
-h3,
-h4 {
-	color: white;
-	font-family: 'Figtree', sans-serif;
-	width: 80%;
-	margin: auto;
+h3{
+	margin-left:10%;
+	margin-right:10%;
 	max-width: 600px;
 	text-align: center;
 }
-
 h2 {
+	text-align: center;
 	margin-bottom: 1rem;
 }
-
 a {
 	color: orange;
 }
@@ -49,13 +44,25 @@ a {
 .tiers {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction:row;
 	justify-content: center;
-	div {
+	.tier {
+		background: linear-gradient(
+			45deg,
+			rgba(32, 29, 56, 1) 0%,
+			rgba(102, 40, 156, 1) 50%,
+			rgba(32, 29, 56, 1) 100%
+		);
+		background-color:rgb(42, 9, 88);
 		text-align: center;
-		border: 4px outset rgb(100, 100, 100);
-		margin: 15px;
-		padding: 15px;
-		min-width: 285px;
+		border-radius: 3rem;
+		margin: 0.8rem;
+		padding: 0.8rem;
+		width: 285px;
+		transition: box-shadow 500ms ease-in-out;
+		&:hover{
+			box-shadow:0px 0px 4px 5px rgba(255, 255, 255, 0.367);
+		}
 	}
 }
 

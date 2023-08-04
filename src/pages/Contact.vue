@@ -1,6 +1,8 @@
 <template>
-	<h2>Contact Us</h2>
-	<h3>Multiple team representatives would love to get in contact with you</h3>
+	<div class="title">
+		<h2>Contact Us</h2>
+		<h3>Multiple team representatives would love to get in contact with you</h3>
+	</div>
 	<div class="people">
 		<div v-for="p in people" class="person">
 			<h3>{{ p.name }}</h3>
@@ -16,12 +18,10 @@ import {people} from '../data/contact.js'
 </script>
 
 <style scoped lang="scss">
-h2,
-h3,
-h4 {
-	color: whitesmoke;
+.title{
 	text-align: center;
-	font-family: 'Figtree', sans-serif;
+	margin-right:10%;
+	margin-left:10%
 }
 .people {
 	display: flex;
@@ -29,11 +29,21 @@ h4 {
 	justify-content: center;
 	.person {
 		text-align: center;
-		border: 4px outset rgb(100, 100, 100);
-		margin: 15px;
-		padding: 15px;
+		margin: 1rem;
+		padding: 1rem;
 		min-width: 285px;
 		color: white;
+		background: linear-gradient(
+			45deg,
+			rgba(32, 29, 56, 1) 0%,
+			rgba(102, 40, 156, 1) 50%,
+			rgba(32, 29, 56, 1) 100%
+		);
+		background-color:rgb(42, 9, 88);
+		border-radius: 3rem;
+		a{
+			text-decoration:none;
+		}
 	}
 }
 </style>
