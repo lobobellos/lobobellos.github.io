@@ -17,9 +17,12 @@ onMounted(()=>{
 		rotation.value = (-rotation.value) - 90
 		dropdownVisible.value = !dropdownVisible.value
 		threeLinesImg.value.style.transform = `rotate(${rotation.value}deg)`
-	}
+	}	
 })
 
+function closeNavBar(){
+	dropdownVisible.value = false
+}
 </script>
 
 <template>
@@ -58,11 +61,11 @@ onMounted(()=>{
 			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
 				<div>Event history</div>
 			</a>
-			<router-link to="/first"><div>What is FIRST</div></router-link>
-			<router-link to="/robots"><div>Our Robots</div></router-link>
-			<router-link to="/partner"><div>Become a Partner</div></router-link>
-			<router-link to="/partners"><div>Our Partners</div></router-link>
-			<router-link to="/contact"><div>Contact us</div></router-link>
+			<router-link @click="()=>closeNavBar()" to="/first"><div>What is FIRST</div></router-link>
+			<router-link @click="()=>closeNavBar()" to="/robots"><div>Our Robots</div></router-link>
+			<router-link @click="()=>closeNavBar()" to="/partner"><div>Become a Partner</div></router-link>
+			<router-link @click="()=>closeNavBar()" to="/partners"><div>Our Partners</div></router-link>
+			<router-link @click="()=>closeNavBar()" to="/contact"><div>Contact us</div></router-link>
 		</div>
 	</div>
 
@@ -103,7 +106,6 @@ onMounted(()=>{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		img{
 			transition: transform 200ms ease-in-out;
 			width:3rem;
@@ -175,10 +177,7 @@ onMounted(()=>{
 		text-decoration:none;
 		color: whitesmoke;
 		font-family: 'Oswald', sans-serif;
-
 	}
-	
-	
 }
 
 .custom-shape-divider-top-1660162422 {
