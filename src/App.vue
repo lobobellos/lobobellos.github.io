@@ -1,21 +1,21 @@
-<template>
-	<div>
-		<Navbar />
-		<Top />
-		<ShapeDivider id="divider"/>
-		<div class="router">
-			<Router-view ></router-view>
-		</div>
-		<Foot />
-	</div>
-</template>
-
 <script setup lang="ts">
 import Top from './components/Top.vue'
 import Navbar from './components/Navbar.vue'
 import Foot from './components/Foot.vue'
 import ShapeDivider from './components/ShapeDivider.vue'
 </script>
+
+<template>
+	<div>
+		<Navbar />
+		<Top />
+		<ShapeDivider id="divider" />
+		<div class="router">
+			<Router-view></Router-view>
+		</div>
+		<Foot />
+	</div>
+</template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
@@ -39,20 +39,20 @@ body {
 		rgba(102, 40, 156, 1) 0%,
 		rgba(32, 29, 56, 1) 100%
 	);
-	#divider{
-		position:relative;
+	#divider {
+		position: relative;
 	}
-	.router{
-		background-color:rgb(62, 16, 88);
-		padding-top:1rem;
-		padding-bottom:0.5rem
+	.router {
+		background-color: rgb(62, 16, 88);
+		padding-top: 1rem;
+		padding-bottom: 0.5rem;
 	}
 }
-iframe{
-	border-radius:1rem;
-		transition: box-shadow 500ms ease-in-out;
-		&:hover{
-			box-shadow: 0px 0px 10px 10px #00000040;
-		}
+iframe {
+	border-radius: 1rem;
+	transition: box-shadow 500ms ease-in-out;
+	&:hover {
+		box-shadow: 0px 0px 10px 10px #00000040;
+	}
 }
 </style>

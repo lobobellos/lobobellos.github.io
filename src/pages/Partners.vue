@@ -1,7 +1,15 @@
+<script setup lang="ts">
+import { tiers } from '../data/partners.js'
+import SectionHeader from '../components/SectionHeader.vue'
+</script>
+
 <template>
 	<div class="body">
-		<div class ="secHead">
-			<SectionHeader  title="Our Partners" subtitle="Our partners are some of the best in the business. Our gratitude goes out to them for their support." />
+		<div class="secHead">
+			<SectionHeader
+				title="Our Partners"
+				subtitle="Our partners are some of the best in the business. Our gratitude goes out to them for their support."
+			/>
 		</div>
 		<div class="tier" v-for="tier in tiers">
 			<h3>{{ tier.title }}</h3>
@@ -18,16 +26,10 @@
 			</div>
 		</div>
 	</div>
-
 </template>
 
-<script setup lang="ts">
-import { tiers } from '../data/partners.js'
-import SectionHeader from '../components/SectionHeader.vue'
-</script>
-
 <style scoped lang="scss">
-.secHead{
+.secHead {
 	margin-bottom: 3rem;
 }
 .body {
@@ -42,36 +44,36 @@ import SectionHeader from '../components/SectionHeader.vue'
 	hr {
 		width: 80%;
 	}
-	.images {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		.imageContainer {
-			height: 150px;
-			width: 200px;
-			background-color: white;
+	.tier{
+		.images {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
-			align-items: center;
-			margin: 0.5rem;
-			img {
-				width: 175px;
-				height: auto;
+			.imageContainer {
+				height: 150px;
+				width: 200px;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0.5rem;
+				img {
+					width: 175px;
+					height: auto;
+				}
+			}
+		}
+		.names ul{
+			text-align: left;
+			width: 80%;
+			margin: auto;
+			column-count: 3;
+			column-gap: 40px;
+			li{
+				color: white;
+				font-family: 'Figtree', sans-serif;
 			}
 		}
 	}
-}
-
-ul {
-	text-align: left;
-	width: 80%;
-	margin: auto;
-	column-count: 3;
-	column-gap: 40px;
-}
-
-li {
-	color: white;
-	font-family: 'Figtree', sans-serif;
 }
 </style>

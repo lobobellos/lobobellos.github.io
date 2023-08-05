@@ -20,13 +20,12 @@ p {
 		width: auto;
 		color: whitesmoke;
 		font-family: 'Open Sans', sans-serif;
-		h1{
-			margin-top:0px;
+		h1 {
+			margin-top: 0px;
 		}
 		p {
-			margin-bottom:0.5rem
+			margin-bottom: 0.5rem;
 		}
 	}
 }
-
 </style>

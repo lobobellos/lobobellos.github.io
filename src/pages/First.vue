@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SectionHeader from '../components/SectionHeader.vue';
+import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import SectionHeader from '../components/SectionHeader.vue';
 			<img alt="FIRST" src="../assets/FIRST-logo.png" />
 		</a>
 		<div class="secHead">
-			<SectionHeader title="What Is FIRST?"/>
+			<SectionHeader title="What Is FIRST?" />
 		</div>
 	</div>
 	<div class="body">
@@ -26,9 +26,7 @@ import SectionHeader from '../components/SectionHeader.vue';
 				innovation, and that foster well-rounded life capabilities including
 				self-confidence, communication, and leadership.
 			</p>
-			<h2>
-				Vision
-			</h2>
+			<h2>Vision</h2>
 			<blockquote>
 				<p>
 					<em>
@@ -76,12 +74,10 @@ a {
 	}
 }
 .body {
-
-	display:flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
-	
 	.textContainer {
 		width: 80%;
 		margin: auto;
@@ -94,6 +90,5 @@ a {
 		margin: auto;
 		max-width: 600px;
 	}
-	
 }
 </style>

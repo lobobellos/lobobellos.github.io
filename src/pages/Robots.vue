@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import { items } from '../data/robots'
+import SectionHeader from '../components/SectionHeader.vue'
+</script>
+
 <template>
 	<SectionHeader title="Robots" />
 	<div class="container">
 		<div
-		v-for="item in items"
+			v-for="item in items"
 			class="robotinfo"
 			:style="{
 				backgroundImage: 'url(' + item.imageUrl + ')',
@@ -16,11 +21,6 @@
 	</div>
 </template>
 
-<script setup lang="ts">
-import { items } from '../data/robots';
-import  SectionHeader  from '../components/SectionHeader.vue';
-</script>
-
 <style scoped lang="scss">
 .container {
 	display: flex;
@@ -29,10 +29,10 @@ import  SectionHeader  from '../components/SectionHeader.vue';
 	flex-wrap: wrap;
 	justify-content: center;
 	.robotinfo {
-		display:block;
+		display: block;
 		margin: 2rem;
 		width: 300px;
-		height:400px;
+		height: 400px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -41,15 +41,15 @@ import  SectionHeader  from '../components/SectionHeader.vue';
 			padding-right: 5%;
 			height: inherit;
 		}
-		h2{
-			padding-top:1rem;
-			margin-top:0
+		h2 {
+			padding-top: 1rem;
+			margin-top: 0;
 		}
 		p {
 			color: transparent;
 			transition: 100ms;
 		}
-		&:hover{
+		&:hover {
 			p {
 				color: white;
 				transition: color 200ms ease-in-out;

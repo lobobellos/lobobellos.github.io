@@ -5,8 +5,7 @@ const iframe = ref<HTMLIFrameElement>(null)
 onMounted(()=>{
 	iframe.value.src =
 		'https://www.youtube.com/embed/0zpflsYc4PA'
-
-	iframe.value.height = iframe.value.width * (3/2)
+	iframe.value.height = String(parseInt(iframe.value.width) * (3/2))
 })
 </script>
 
@@ -180,9 +179,6 @@ onMounted(()=>{
 				}
 			}
 		}
-	}
-	#reverseWrap{
-		flex-wrap: wrap-reverse;
 	}
 }
 </style>

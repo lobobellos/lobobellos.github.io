@@ -1,9 +1,17 @@
+<script setup lang="ts">
+import { tiers } from '../data/partnerBenefits'
+import SectionHeader from '../components/SectionHeader.vue'
+</script>
+
 <template>
-	<SectionHeader title="Become A Partner" subtitle="We are always looking for more partners in our quest to bring stem education
-		to today's youth!"/>
+	<SectionHeader
+		title="Become A Partner"
+		subtitle="We are always looking for more partners in our quest to bring stem education
+		to today's youth!"
+	/>
 	<div class="textWrapper">
 		<h3>
-			 Visit our
+			Visit our
 			<router-link to="/contact" id="contactLink">contact</router-link>
 			page for more information, or donate on our
 			<a href="https://www.gofundme.com/f/support-our-schools-robotics-team">
@@ -24,27 +32,22 @@
 	</div>
 </template>
 
-<script setup lang="ts">
-import { tiers } from '../data/partnerBenefits'
-import SectionHeader from '../components/SectionHeader.vue'
-</script>
-
 <style scoped lang="scss">
-.textWrapper{
-	display:flex;
+	a {
+		color: orange;
+	}
+.textWrapper {
+	display: flex;
 	justify-content: center;
-	h3{
+	h3 {
 		max-width: 600px;
 		text-align: center;
 	}
 }
-a {
-	color: orange;
-}
 .tiers {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction:row;
+	flex-direction: row;
 	justify-content: center;
 	.tier {
 		background: linear-gradient(
@@ -53,7 +56,7 @@ a {
 			rgba(102, 40, 156, 1) 50%,
 			rgba(32, 29, 56, 1) 100%
 		);
-		background-color:rgb(42, 9, 88);
+		background-color: rgb(42, 9, 88);
 		text-align: center;
 		border-radius: 3rem;
 		margin: 0.8rem;
@@ -62,12 +65,10 @@ a {
 		transition: box-shadow 500ms ease-in-out;
 		li {
 			text-align: left;
-		
 		}
-		&:hover{
-			box-shadow:0px 0px 4px 5px rgba(255, 255, 255, 0.367);
+		&:hover {
+			box-shadow: 0px 0px 4px 5px rgba(255, 255, 255, 0.367);
 		}
 	}
 }
-
 </style>
