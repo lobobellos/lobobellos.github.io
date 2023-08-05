@@ -1,34 +1,32 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue'
 import threeLines from '../assets/threeLines.png'
 import teamLogo from '../assets/teamLogo.png'
 
 const width = ref<number>(null)
 const threeLinesImg = ref<HTMLImageElement>(null)
-let rotation = 0
 const dropdownItems = ref(null)
+let rotation = 0
 let translateY = -200
 
-onMounted(()=>{
+onMounted(() => {
 	width.value = window.innerWidth
-	window.addEventListener("resize",()=>{
+	window.addEventListener('resize', () => {
 		width.value = window.innerWidth
 	})
 	threeLinesImg.value.onclick = toggleNavBar
 	dropdownItems.value.style.transform = `translateY(${translateY}%)`
 })
-
-
-function toggleNavBar(){
-	rotation = (-rotation) - 90
-	translateY = (-translateY) -200
+function toggleNavBar() {
+	rotation = -rotation - 90
+	translateY = -translateY - 200
 	dropdownItems.value.style.transform = `translateY(${translateY}%)`
 	threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
 }
 </script>
 
 <template>
-	<div class="navbar" v-if="width >=1050">
+	<div class="navbar" v-if="width >= 1050">
 		<div class="imageContainer">
 			<router-link to="/">
 				<img :src="teamLogo" alt="team logo" />
@@ -47,31 +45,42 @@ function toggleNavBar(){
 		</div>
 	</div>
 	<div v-else>
-		<div class="navbar" >
+		<div class="navbar">
 			<div class="imageContainer">
 				<router-link to="/">
 					<img :src="teamLogo" alt="team logo" />
 				</router-link>
 			</div>
 			<div class="threeLines">
-				<img :src="threeLines" ref="threeLinesImg" alt="three lines icon">
+				<img :src="threeLines" ref="threeLinesImg" alt="three lines icon" />
 			</div>
 		</div>
 		<div class="dropdown" ref="dropdownItems">
-			<div class="items" >
-				<router-link @click="()=>toggleNavBar()" to="/"><div>About us</div></router-link>
-				<router-link @click="()=>toggleNavBar()" to="/first"><div>What is FIRST</div></router-link>
-				<router-link @click="()=>toggleNavBar()" to="/robots"><div>Our Robots</div></router-link>
-				<router-link @click="()=>toggleNavBar()" to="/partner"><div>Become a Partner</div></router-link>
-				<router-link @click="()=>toggleNavBar()" to="/partners"><div>Our Partners</div></router-link>
-				<router-link @click="()=>toggleNavBar()" to="/contact"><div>Contact us</div></router-link>
+			<div class="items">
+				<router-link @click="() => toggleNavBar()" to="/">
+					<div>About us</div>
+				</router-link>
+				<router-link @click="() => toggleNavBar()" to="/first">
+					<div>What is FIRST</div>
+				</router-link>
+				<router-link @click="() => toggleNavBar()" to="/robots">
+					<div>Our Robots</div>
+				</router-link>
+				<router-link @click="() => toggleNavBar()" to="/partner">
+					<div>Become a Partner</div>
+				</router-link>
+				<router-link @click="() => toggleNavBar()" to="/partners">
+					<div>Our Partners</div>
+				</router-link>
+				<router-link @click="() => toggleNavBar()" to="/contact">
+					<div>Contact us</div>
+				</router-link>
 				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
 					<div>Event history</div>
 				</a>
 			</div>
 		</div>
 	</div>
-
 	<div class="custom-shape-divider-top-1660162422">
 		<svg
 			data-name="Layer 1"
@@ -92,7 +101,7 @@ function toggleNavBar(){
 	background-color: rgb(46, 46, 46);
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
+	justify-content: space-between;
 	.imageContainer {
 		padding: 0.75rem;
 		img {
@@ -101,27 +110,27 @@ function toggleNavBar(){
 			margin: auto;
 			display: block;
 			transition: box-shadow 300ms ease-in-out;
-			&:hover{
+			&:hover {
 				box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.218);
 			}
 		}
 	}
-	.threeLines{
+	.threeLines {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		img{
+		img {
 			transition: transform 200ms ease-in-out;
-			width:3rem;
-			padding-right:2rem;
-			padding-left:2rem
+			width: 3rem;
+			padding-right: 2rem;
+			padding-left: 2rem;
 		}
 	}
 	.links {
-		display:flex;
+		display: flex;
 		flex-direction: row;
-		align-items:center;
-		a{
+		align-items: center;
+		a {
 			text-decoration: none;
 			div {
 				background-color: rgb(46, 46, 46);
@@ -133,13 +142,13 @@ function toggleNavBar(){
 				transition: 300ms;
 				font-family: 'Oswald', sans-serif;
 				background-image: linear-gradient(
-				to bottom,
-				rgb(46, 46, 46) 50%,
-				blueviolet 50%,
+					to bottom,
+					rgb(46, 46, 46) 50%,
+					blueviolet 50%
 				); /* Set gradient to new color */
 				background-size: 100% 200%; /* Set size of gradient */
 				transition: background-position 0.3s; /* Set transition duration */
-				border-radius:0.5rem;
+				border-radius: 0.5rem;
 				&:hover {
 					background-position: -0% -100%; /* Move gradient upwards */
 				}
@@ -147,38 +156,38 @@ function toggleNavBar(){
 		}
 	}
 }
-.dropdown{
-	z-index:2;
+.dropdown {
+	z-index: 2;
 	background-color: rgb(46, 46, 46);
-	position:absolute;
-	right:0px;
-	width:max-content;
-	padding-left:0.5rem;
-	padding-right:0.5rem;
+	position: absolute;
+	right: 0px;
+	width: max-content;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	border-bottom-left-radius: 3rem;
 	transition: transform 400ms ease-in-out;
-	.items{
-		display:flex;
-		flex-direction:column;
-		padding-bottom:1rem;
+	.items {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1rem;
 		a {
-			margin-top:1rem;
-			margin-left:1rem;
-			margin-right:1rem;
-			font-size:1.2rem;
-			text-decoration:none;
+			margin-top: 1rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			font-size: 1.2rem;
+			text-decoration: none;
 			color: whitesmoke;
 			font-family: 'Oswald', sans-serif;
-			div{
-				text-align:center;
+			div {
+				text-align: center;
 				background-image: linear-gradient(
-				to right,
-				rgb(46, 46, 46) 50%,
-				blueviolet 50%,
+					to right,
+					rgb(46, 46, 46) 50%,
+					blueviolet 50%
 				); /* Set gradient to new color */
 				background-size: 200% 100%; /* Set size of gradient */
 				transition: background-position 0.3s; /* Set transition duration */
-				border-radius:0.5rem;
+				border-radius: 0.5rem;
 				&:hover {
 					background-position: -100% -0%; /* Move gradient upwards */
 				}
@@ -186,7 +195,6 @@ function toggleNavBar(){
 		}
 	}
 }
-
 .custom-shape-divider-top-1660162422 {
 	width: 100%;
 	overflow: hidden;
