@@ -59,7 +59,7 @@ onMounted(()=>{
 				</p>
 			</div>
 			<div class="imageContainer">
-				<img src="../assets/preSeason.png" alt="Pre-Season image">
+				<img src="../assets/preseason.png" alt="Pre-Season image">
 			</div>
 		</div>
 		<div class="whatWeDo" id="reverseWrap">
