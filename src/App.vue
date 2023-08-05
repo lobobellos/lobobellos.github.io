@@ -27,6 +27,7 @@ body {
 	h4,
 	h5,
 	h6,
+	li,
 	p {
 		font-family: Figtree, sans-serif;
 		color: white;
