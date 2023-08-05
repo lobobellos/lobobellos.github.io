@@ -1,15 +1,17 @@
 <template>
 	<SectionHeader title="Become A Partner" subtitle="We are always looking for more partners in our quest to bring stem education
 		to today's youth!"/>
-	<h3 id="mainText">
-		 Please visit our
-		<router-link to="/contact" id="contactLink">contact</router-link>
-		page for more information, or donate on our
-		<a href="https://www.gofundme.com/f/support-our-schools-robotics-team">
-			gofundme
-		</a>
-		.
-	</h3>
+	<div class="textWrapper">
+		<h3>
+			 Visit our
+			<router-link to="/contact" id="contactLink">contact</router-link>
+			page for more information, or donate on our
+			<a href="https://www.gofundme.com/f/support-our-schools-robotics-team">
+				gofundme
+			</a>
+			.
+		</h3>
+	</div>
 	<br />
 	<div class="tiers">
 		<div class="tier" v-for="tier in tiers">
@@ -28,11 +30,13 @@ import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
 <style scoped lang="scss">
-h3{
-	margin-left:10%;
-	margin-right:10%;
-	max-width: 600px;
-	text-align: center;
+.textWrapper{
+	display:flex;
+	justify-content: center;
+	h3{
+		max-width: 600px;
+		text-align: center;
+	}
 }
 a {
 	color: orange;
@@ -56,15 +60,14 @@ a {
 		padding: 0.8rem;
 		width: 285px;
 		transition: box-shadow 500ms ease-in-out;
+		li {
+			text-align: left;
+		
+		}
 		&:hover{
 			box-shadow:0px 0px 4px 5px rgba(255, 255, 255, 0.367);
 		}
 	}
 }
 
-li {
-	color: white;
-	text-align: left;
-	font-family: 'Figtree', sans-serif;
-}
 </style>
