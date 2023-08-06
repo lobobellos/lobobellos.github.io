@@ -6,7 +6,7 @@ import ShapeDivider from './components/ShapeDivider.vue'
 </script>
 
 <template>
-	<div>
+	<div class="everything">
 		<Navbar />
 		<Top />
 		<ShapeDivider id="divider" />
@@ -19,19 +19,7 @@ import ShapeDivider from './components/ShapeDivider.vue'
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans&family=Oswald:wght@400;500&display=swap');
-
 body {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	li,
-	p {
-		font-family: Figtree, sans-serif;
-		color: white;
-	}
 	padding: 0px;
 	margin: 0px;
 	background: linear-gradient(
@@ -39,20 +27,27 @@ body {
 		rgba(102, 40, 156, 1) 0%,
 		rgba(32, 29, 56, 1) 100%
 	);
-	#divider {
-		position: relative;
-	}
-	.router {
-		background-color: rgb(62, 16, 88);
-		padding-top: 1rem;
-		padding-bottom: 0.5rem;
+	.everything {
+		overflow: clip;
+		#divider {
+			position: relative;
+		}
+		.router {
+			background-color: rgb(62, 16, 88);
+			padding-top: 1rem;
+			padding-bottom: 0.5rem;
+		}
 	}
 }
-iframe {
-	border-radius: 1rem;
-	transition: box-shadow 500ms ease-in-out;
-	&:hover {
-		box-shadow: 0px 0px 10px 10px #00000040;
+:root {
+	font-family: Figtree, sans-serif;
+	color: white;
+	iframe {
+		border-radius: 1rem;
+		transition: box-shadow 500ms ease-in-out;
+		&:hover {
+			box-shadow: 0px 0px 10px 10px #00000040;
+		}
 	}
 }
 </style>
