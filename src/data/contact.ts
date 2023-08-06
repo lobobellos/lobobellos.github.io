@@ -1,12 +1,4 @@
-
-interface Contact {
-  name: string;
-  title: string;
-  email: string;
-  phone: string;
-}
-
-export const people: Contact[] = [
+export const people = [
   {
     name: 'Josiah Hamm',
     title: 'Vice Captain',

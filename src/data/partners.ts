@@ -23,14 +23,14 @@ export const tiers = [
   {
     title: 'Delta Wolf Partners: $999-$500',
     usesImages: false,
-    names : [
+    names: [
       'You?'
     ]
   },
   {
     title: 'Wolf Cub Partners: $499-$1',
     usesImages: false,
-    names : [
+    names: [
       'You?'
     ]
   }

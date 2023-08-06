@@ -3,13 +3,7 @@ import robot2022 from '../assets/robots/robot-2022.jpg'
 import robot2020 from '../assets/robots/robot-2020.jpg'
 import robot2018 from '../assets/robots/robot-2018.jpg'
 
-interface Item {
-	imageUrl: string
-	title: string
-	description: string
-}
-
-export const items:Item[] = [
+export const items = [
   {
     imageUrl: robot2023,
     title: '2023: Nikola',
