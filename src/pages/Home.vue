@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SectionHeader from '../components/SectionHeader.vue';
+import DonateButton from '../components/DonateButton.vue';
 import {onMounted, ref} from 'vue'
 const iframe = ref<HTMLIFrameElement>(null)
 onMounted(()=>{
@@ -92,6 +93,9 @@ onMounted(()=>{
 				></iframe>
 			</div>
 		</div>
+		<div class="donateButtonContainer">
+			<DonateButton id="donateButton" />
+		</div>
 	</div>
 </template>
 
@@ -179,6 +183,13 @@ onMounted(()=>{
 				}
 			}
 		}
+	}
+	.donateButtonContainer {
+		margin-top:2rem;
+		width:100%;
+		display:flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 </style>
