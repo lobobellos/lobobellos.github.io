@@ -42,7 +42,8 @@ import SectionHeader from '../components/SectionHeader.vue'
 		background-color: rgb(42, 9, 88);
 		border-radius: 3rem;
 		a {
-			text-decoration: none;
+			text-decoration: underline;
+			color: orange;
 		}
 		transition: box-shadow 500ms ease-in-out;
 		&:hover {
