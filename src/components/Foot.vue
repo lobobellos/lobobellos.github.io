@@ -17,9 +17,8 @@ import teamStructure from '../assets/structure.png'
 				></path>
 			</svg>
 		</div>
-
-		<div class="columnContainer">
-			<div class="column">
+		<div class="container">
+			<div class="item">
 				<p>Social Media</p>
 				<div class="images">
 					<a href="https://github.com/lobobellos" target="_blank">
@@ -30,22 +29,17 @@ import teamStructure from '../assets/structure.png'
 					</a>
 				</div>
 			</div>
-			<div class="column">
+			<div class="item">
 				<p>Materials</p>
 				<a
 					href="https://docs.google.com/document/d/1VIn3m9wUrO3MK3xSC8ucIIeROenOT5PfSYF6R4eOw-k/edit?usp=sharing"
 					target="_blank"
 				>
 					Team Contract
-				</a>
-				<br />
-				<a :href="teamStructure" target="_blank">
-					Team Structure
-				</a>
-				<br />
-				<br />
+				</a><br>
+				<a :href="teamStructure" target="_blank">Team Structure</a>
 			</div>
-			<div class="column">
+			<div class="item">
 				<p>Info for Sponsors</p>
 				<a
 					href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit?usp=sharing"
@@ -53,7 +47,6 @@ import teamStructure from '../assets/structure.png'
 				>
 					Letter to Sponsors
 				</a>
-				<br />
 			</div>
 		</div>
 		<p id="copyright">
@@ -81,24 +74,21 @@ import teamStructure from '../assets/structure.png'
 			fill: rgb(62, 16, 88);
 		}
 	}
-	.columnContainer {
+	.container {
 		display: flex;
 		flex-wrap: wrap;
 		padding-left: 25px;
 		padding-right: 25px;
-		.column {
+		.item {
 			flex-grow: 4;
 			text-align: center;
 			p {
-				color: white;
-				font-family: 'Figtree', sans-serif;
-				text-align: center;
+				font-size: 1.2rem;
 			}
 			a {
 				text-align: center;
 				color: orange;
-				font-family: 'Figtree', sans-serif;
-				font-size: small;
+				font-size: 1rem;
 			}
 			.images {
 				display: flex;
