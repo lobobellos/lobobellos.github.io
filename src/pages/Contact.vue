@@ -4,25 +4,59 @@ import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
 <template>
-	<SectionHeader
-		title="Contact"
-		subtitle="Team representatives would love to get in touch with you"
-	/>
+	<div class="titleContainer">
+		<div class="images">
+			<a href="https://github.com/lobobellos" target="_blank">
+				<img src="../assets/github.png" alt="github" id="github" />
+			</a>
+			<a href="https://instagram.com/robolobobellos" target="_blank">
+				<img src="../assets/instagram.webp" alt="instagram" />
+			</a>
+		</div>
+		<div class="secHead">
+			<SectionHeader
+				title="Contact"
+				subtitle="Team representatives would love to get in touch with you"
+			/>
+		</div>
+	</div>
+
 	<div class="people">
 		<div v-for="p in people" class="person">
 			<h3>{{ p.name }}</h3>
 			<h4>{{ p.title }}</h4>
-			<a :href="'mailto:' + p.email">
-				<h4>{{ p.email }}</h4>
-			</a>
-			<a :href="'tel:+1' + p.phone">
-				<h4>{{ p.phone }}</h4>
-			</a>
+			<h4>
+				<a :href="'mailto:' + p.email">{{ p.email }}</a>
+			</h4>
+			<h4>
+				<a :href="'tel:+1' + p.phone">{{ p.phone }}</a>
+			</h4>
 		</div>
 	</div>
 </template>
 
 <style scoped lang="scss">
+.titleContainer {
+	display: flex;
+	margin-bottom: 5%;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	.images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			img {
+				width: 35px;
+				padding: 0.5rem;
+			}
+			#github {
+				filter: invert(100%);
+			}
+		}
+	}
+}
 .people {
 	display: flex;
 	flex-wrap: wrap;
@@ -31,7 +65,8 @@ import SectionHeader from '../components/SectionHeader.vue'
 		text-align: center;
 		margin: 1rem;
 		padding: 1rem;
-		min-width: 285px;
+		width: 80%;
+		max-width: 275px;
 		color: white;
 		background: linear-gradient(
 			45deg,
