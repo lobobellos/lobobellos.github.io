@@ -64,6 +64,8 @@ import teamStructure from '../assets/structure.png'
 
 <style scoped lang="scss">
 .main {
+	background-color: rgb(42, 42, 42);
+	padding-bottom: 15px;
 	.custom-shape-divider-top-1660162422 {
 		width: 100%;
 		overflow: hidden;
@@ -79,8 +81,6 @@ import teamStructure from '../assets/structure.png'
 			fill: rgb(62, 16, 88);
 		}
 	}
-	background-color: rgb(42, 42, 42);
-	padding-bottom: 15px;
 	.columnContainer {
 		display: flex;
 		flex-wrap: wrap;
