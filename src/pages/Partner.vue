@@ -42,6 +42,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 	h3 {
 		max-width: 600px;
 		text-align: center;
+		width:80%;
 	}
 }
 .tiers {
