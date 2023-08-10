@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { tiers } from '../data/partnerBenefits'
 import SectionHeader from '../components/SectionHeader.vue'
+import FancyButton from '../components/FancyButton.vue'
 </script>
 
 <template>
@@ -9,40 +10,52 @@ import SectionHeader from '../components/SectionHeader.vue'
 		subtitle="We are always looking for more partners in our quest to bring stem education
 		to today's youth!"
 	/>
-	<div class="textWrapper">
-		<h3>
-			Visit our
-			<router-link to="/contact" id="contactLink">contact</router-link>
-			page for more information, or donate on our
-			<a href="https://www.gofundme.com/f/support-our-schools-robotics-team">
-				gofundme
-			</a>
-			.
-		</h3>
+	<div class="buttonWrapper">
+		<FancyButton
+      class="button"
+			text="Contact"
+			href="/contact"
+			:newpage="false"
+			:use-router="true"
+		/>
+		<FancyButton
+      class="button"
+			text="GoFundMe"
+			href="https://www.gofundme.com/f/support-our-schools-robotics-team"
+			newpage
+			:use-router="false"
+		/>
+		<FancyButton
+      class="button"
+			text="Corporate"
+			href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit"
+			:newpage="true"
+			:use-router="false"
+		/>
 	</div>
 	<br />
 	<div class="tiers">
-		<div class="tier" v-for="tier in tiers">
+		<div v-for="tier in tiers" class="tier">
 			<h3>{{ tier.title }}</h3>
 			<h4>{{ tier.money }}</h4>
 			<ul>
-				<li v-for="benefit in tier.benefits">{{ benefit }}</li>
+				<li v-for="benefit in tier.benefits">
+					{{ benefit }}
+				</li>
 			</ul>
 		</div>
 	</div>
 </template>
 
 <style scoped lang="scss">
-	a {
-		color: orange;
-	}
-.textWrapper {
+.buttonWrapper {
 	display: flex;
 	justify-content: center;
-	h3 {
+  flex-wrap: wrap;
+	.button {
 		max-width: 600px;
 		text-align: center;
-		width:80%;
+    margin: 0.5rem;
 	}
 }
 .tiers {
