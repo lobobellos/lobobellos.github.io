@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SectionHeader from '../components/SectionHeader.vue';
-import DonateButton from '../components/DonateButton.vue';
+import FancyButton from '../components/FancyButton.vue';
 import {onMounted, ref} from 'vue'
 const iframe = ref<HTMLIFrameElement>(null)
 onMounted(()=>{
@@ -93,8 +93,25 @@ onMounted(()=>{
 				></iframe>
 			</div>
 		</div>
-		<div class="donateButtonContainer">
-			<DonateButton id="donateButton" />
+		<div class="buttons">
+			<div class="innerButtons">
+				<div class="buttonContainer">
+					<FancyButton 
+						text="Donate" 
+						href="https://www.gofundme.com/f/support-our-schools-robotics-team"
+						newpage
+						:useRouter=false
+					/>
+				</div>
+				<div class="buttonContainer">
+					<FancyButton 
+					text="Corporate" 
+					href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit"
+					:newpage=true
+					:useRouter=false
+					/>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -184,12 +201,20 @@ onMounted(()=>{
 			}
 		}
 	}
-	.donateButtonContainer {
+	.buttons {
 		margin-top:2rem;
-		width:100%;
 		display:flex;
 		justify-content: center;
 		align-items: center;
+		.innerButtons {
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			.buttonContainer {
+				margin:0.5rem;
+			}
+		}
 	}
 }
 </style>
