@@ -6,7 +6,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 <template>
 	<SectionHeader
 		title="Contact"
-		subtitle="Team representatives would love to get in contact with you"
+		subtitle="Team representatives would love to get in touch with you"
 	/>
 	<div class="people">
 		<div v-for="p in people" class="person">
