@@ -12,6 +12,9 @@ import SectionHeader from '../components/SectionHeader.vue'
 			<a href="https://instagram.com/robolobobellos" target="_blank">
 				<img src="../assets/instagram.webp" alt="instagram" />
 			</a>
+			<a href="https://www.youtube.com/@RoboLoboBellos" target="_blank">
+				<img src="../assets/youtube.png" alt="youtube" />
+			</a>
 		</div>
 		<div class="secHead">
 			<SectionHeader
