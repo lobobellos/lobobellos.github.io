@@ -28,6 +28,9 @@ import teamStructure from '../assets/structure.png'
 					<a href="https://instagram.com/robolobobellos" target="_blank">
 						<img src="../assets/instagram.webp" alt="instagram" />
 					</a>
+					<a href="https://www.youtube.com/@RoboLoboBellos" target="_blank">
+						<img src="../assets/youtube.png" alt="youtube" />
+					</a>
 				</div>
 			</div>
 			<div class="column">
