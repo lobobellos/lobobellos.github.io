@@ -123,6 +123,8 @@ onMounted(() => {
 		flex-direction: row;
 		flex-wrap: wrap-reverse;
 		justify-content: center;
+		padding-left: 10%;
+		padding-right: 10%;
 		.text {
 			display: flex;
 			justify-content: center;
