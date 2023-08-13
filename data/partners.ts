@@ -3,7 +3,7 @@ import NREL from '../assets/NREL.png'
 import NECLogo from '../assets/NECLogo.jpg'
 import CareerConnect from '../assets/careerconnect.jpg'
 
-export const tiers = [
+export const partners = [
   {
     title: 'Alpha Wolf Partners: $2500+',
     usesImages: true,

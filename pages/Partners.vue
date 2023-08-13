@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { tiers } from '../data/partners.js'
-import SectionHeader from '../components/SectionHeader.vue'
+import { partners } from '../data'
 </script>
 
 <template>
@@ -11,7 +10,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 				subtitle="Our partners are some of the best in the business. Our gratitude goes out to them for their support."
 			/>
 		</div>
-		<div class="tier" v-for="tier in tiers">
+		<div class="tier" v-for="tier in partners">
 			<h3>{{ tier.title }}</h3>
 			<hr />
 			<div class="images" v-if="tier.usesImages">

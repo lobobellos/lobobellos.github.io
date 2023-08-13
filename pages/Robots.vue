@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { items } from '../data/robots'
-import SectionHeader from '../components/SectionHeader.vue'
+import { robots } from '../data'
 </script>
 
 <template>
 	<SectionHeader title="Robots" />
 	<div class="container">
 		<div
-			v-for="item in items"
+			v-for="item in robots"
 			class="robotinfo"
 			:style="{
 				backgroundImage: 'url(' + item.imageUrl + ')',

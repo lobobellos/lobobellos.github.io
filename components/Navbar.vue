@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import threeLines from '../assets/threeLines.png'
-import teamLogo from '../assets/teamLogo.png'
+import threeLines from '~/assets/threeLines.png'
+import teamLogo from '~/assets/teamLogo.png'
 
 const width = ref<number>(null)
 const threeLinesImg = ref<HTMLImageElement>(null)
@@ -17,16 +16,18 @@ onMounted(() => {
 	threeLinesImg.value.onclick = toggleNavBar
 })
 function resizeHandler() {
+	console.log("resize")
 	width.value = window.innerWidth
 	threeLinesImg.value.hidden = !(width.value < 1050)
 	if (width.value < 1050) {
 		rotation = 0
 		translateY = -200
-		dropdownItems.value.style.transform = `translateY(${translateY}%)`
-		threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
+		if(dropdownItems.value) dropdownItems.value.style.transform = `translateY(${translateY}%)`
+		if(threeLinesImg.value) threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
 	}
 }
 function toggleNavBar() {
+	console.log("toggle")
 	rotation = -rotation - 90
 	translateY = -translateY - 200
 	dropdownItems.value.style.transform = `translateY(${translateY}%)`
@@ -56,7 +57,7 @@ function toggleNavBar() {
 			<img :src="threeLines" ref="threeLinesImg" alt="three lines icon" />
 		</div>
 	</div>
-	<div class="dropdown" ref="dropdownItems" v-if="width < 1050">
+	<div class="dropdown" ref="dropdownItems" v-if="width < 1050 && width">
 		<div class="items">
 			<router-link @click="() => toggleNavBar()" to="/">
 				<div>About us</div>
@@ -166,6 +167,7 @@ function toggleNavBar() {
 	padding-right: 0.5rem;
 	border-bottom-left-radius: 3rem;
 	transition: transform 400ms ease-in-out;
+	transform: translateY(-200%);
 	.items {
 		display: flex;
 		flex-direction: column;

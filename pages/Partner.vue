@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { tiers } from '../data/partnerBenefits'
-import SectionHeader from '../components/SectionHeader.vue'
-import FancyButton from '../components/FancyButton.vue'
+import { benefitTiers } from '~/data'
 </script>
 
 <template>
@@ -35,7 +33,7 @@ import FancyButton from '../components/FancyButton.vue'
 	</div>
 	<br />
 	<div class="tiers">
-		<div v-for="tier in tiers" class="tier">
+		<div v-for="tier in benefitTiers" class="tier">
 			<h3>{{ tier.title }}</h3>
 			<h4>{{ tier.money }}</h4>
 			<ul>

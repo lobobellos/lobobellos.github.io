@@ -1,4 +1,4 @@
-export const tiers = [
+export const benefitTiers = [
   {
     title: 'Alpha Wolf Tier',
     money: '$2500+',

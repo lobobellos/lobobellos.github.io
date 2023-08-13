@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import teamStructure from '../assets/structure.png'
-</script>
-
 <template>
 	<div class="main">
 		<div class="custom-shape-divider-top-1660162422">
@@ -40,7 +36,7 @@ import teamStructure from '../assets/structure.png'
 				>
 					Team Contract
 				</a><br>
-				<a :href="teamStructure" target="_blank">Team Structure</a>
+				<a href="~/assets/structure.png" target="_blank">Team Structure</a>
 			</div>
 			<div class="item">
 				<p>Info for Sponsors</p>

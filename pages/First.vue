@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import SectionHeader from '../components/SectionHeader.vue'
-</script>
-
 <template>
 	<div class="titleContainer">
 		<a href="https://www.firstinspires.org">
-			<img alt="FIRST" src="../assets/FIRST-logo.png" />
+			<img alt="FIRST" src="~/assets/FIRST-logo.png" />
 		</a>
 		<div class="secHead">
 			<SectionHeader title="What Is FIRST?" />

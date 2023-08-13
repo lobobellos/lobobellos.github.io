@@ -1,12 +1,7 @@
 <script setup lang="ts">
-import SectionHeader from '../components/SectionHeader.vue';
-import FancyButton from '../components/FancyButton.vue';
-import {onMounted, ref} from 'vue'
-const iframe = ref<HTMLIFrameElement>(null)
+const iframe = ref<HTMLIFrameElement|null>(null)
 onMounted(() => {
-	iframe.value.src =
-		'https://www.youtube.com/embed/0zpflsYc4PA'
-	iframe.value.height = String(parseInt(iframe.value.width) * (3 / 2))
+	if(iframe.value) iframe.value.src ='https://www.youtube.com/embed/0zpflsYc4PA'
 })
 </script>
 
@@ -129,6 +124,7 @@ onMounted(() => {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
 			p {
 				padding-left: 10%;
 				padding-right: 10%;

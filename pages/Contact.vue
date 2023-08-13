@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { people } from '../data/contact.js'
+import { people } from '~/data'
 import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
@@ -7,13 +7,13 @@ import SectionHeader from '../components/SectionHeader.vue'
 	<div class="titleContainer">
 		<div class="images">
 			<a href="https://github.com/lobobellos" target="_blank">
-				<img src="../assets/github.png" alt="github" id="github" />
+				<img src="~/assets/github.png" alt="github" id="github" />
 			</a>
 			<a href="https://instagram.com/robolobobellos" target="_blank">
-				<img src="../assets/instagram.webp" alt="instagram" />
+				<img src="~/assets/instagram.webp" alt="instagram" />
 			</a>
 			<a href="https://www.youtube.com/@RoboLoboBellos" target="_blank">
-				<img src="../assets/youtube.png" alt="youtube" />
+				<img src="~/assets/youtube.png" alt="youtube" />
 			</a>
 		</div>
 		<div class="secHead">
@@ -31,7 +31,7 @@ import SectionHeader from '../components/SectionHeader.vue'
 			<h4>
 				<a :href="'mailto:' + p.email">{{ p.email }}</a>
 			</h4>
-			<h4>
+			<h4 v-if="p">
 				<a :href="'tel:+1' + p.phone">{{ p.phone }}</a>
 			</h4>
 		</div>
