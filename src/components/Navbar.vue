@@ -10,13 +10,22 @@ let rotation = 0
 let translateY = -200
 
 onMounted(() => {
-	width.value = window.innerWidth
+	resizeHandler()
 	window.addEventListener('resize', () => {
-		width.value = window.innerWidth
+		resizeHandler()
 	})
 	threeLinesImg.value.onclick = toggleNavBar
-	dropdownItems.value.style.transform = `translateY(${translateY}%)`
 })
+function resizeHandler() {
+	width.value = window.innerWidth
+	threeLinesImg.value.hidden = !(width.value < 1050)
+	if (width.value < 1050) {
+		rotation = 0
+		translateY = -200
+		dropdownItems.value.style.transform = `translateY(${translateY}%)`
+		threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
+	}
+}
 function toggleNavBar() {
 	rotation = -rotation - 90
 	translateY = -translateY - 200
@@ -26,13 +35,13 @@ function toggleNavBar() {
 </script>
 
 <template>
-	<div class="navbar" v-if="width >= 1050">
+	<div class="navbar">
 		<div class="imageContainer">
 			<router-link to="/">
 				<img :src="teamLogo" alt="team logo" />
 			</router-link>
 		</div>
-		<div class="links">
+		<div class="links" v-if="width >= 1050">
 			<router-link to="/"><div>About us</div></router-link>
 			<router-link to="/first"><div>What is FIRST</div></router-link>
 			<router-link to="/robots"><div>Our Robots</div></router-link>
@@ -43,42 +52,33 @@ function toggleNavBar() {
 				<div>Event history</div>
 			</a>
 		</div>
-	</div>
-	<div v-else>
-		<div class="navbar">
-			<div class="imageContainer">
-				<router-link to="/">
-					<img :src="teamLogo" alt="team logo" />
-				</router-link>
-			</div>
-			<div class="threeLines">
-				<img :src="threeLines" ref="threeLinesImg" alt="three lines icon" />
-			</div>
+		<div class="threeLines" hidden>
+			<img :src="threeLines" ref="threeLinesImg" alt="three lines icon" />
 		</div>
-		<div class="dropdown" ref="dropdownItems">
-			<div class="items">
-				<router-link @click="() => toggleNavBar()" to="/">
-					<div>About us</div>
-				</router-link>
-				<router-link @click="() => toggleNavBar()" to="/first">
-					<div>What is FIRST</div>
-				</router-link>
-				<router-link @click="() => toggleNavBar()" to="/robots">
-					<div>Our Robots</div>
-				</router-link>
-				<router-link @click="() => toggleNavBar()" to="/partner">
-					<div>Become a Partner</div>
-				</router-link>
-				<router-link @click="() => toggleNavBar()" to="/partners">
-					<div>Our Partners</div>
-				</router-link>
-				<router-link @click="() => toggleNavBar()" to="/contact">
-					<div>Contact us</div>
-				</router-link>
-				<a href="http://www.thebluealliance.com/team/7243" target="_blank">
-					<div>Event history</div>
-				</a>
-			</div>
+	</div>
+	<div class="dropdown" ref="dropdownItems" v-if="width < 1050">
+		<div class="items">
+			<router-link @click="() => toggleNavBar()" to="/">
+				<div>About us</div>
+			</router-link>
+			<router-link @click="() => toggleNavBar()" to="/first">
+				<div>What is FIRST</div>
+			</router-link>
+			<router-link @click="() => toggleNavBar()" to="/robots">
+				<div>Our Robots</div>
+			</router-link>
+			<router-link @click="() => toggleNavBar()" to="/partner">
+				<div>Become a Partner</div>
+			</router-link>
+			<router-link @click="() => toggleNavBar()" to="/partners">
+				<div>Our Partners</div>
+			</router-link>
+			<router-link @click="() => toggleNavBar()" to="/contact">
+				<div>Contact us</div>
+			</router-link>
+			<a href="http://www.thebluealliance.com/team/7243" target="_blank">
+				<div>Event history</div>
+			</a>
 		</div>
 	</div>
 	<div class="custom-shape-divider-top-1660162422">
