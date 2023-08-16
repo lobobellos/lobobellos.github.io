@@ -59,7 +59,7 @@ onMounted(() => {
 				<img src="../assets/preseason.png" alt="Pre-Season image">
 			</div>
 		</div>
-		<div class="whatWeDo" id="reverseWrap">
+		<div class="whatWeDo">
 			<div class="text">
 				<p>
 				<h3>Build Season</h3>
@@ -99,7 +99,7 @@ onMounted(() => {
 					<FancyButton 
 					text="Corporate" 
 					href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit"
-					:newpage=true
+					newpage
 					:useRouter=false
 					/>
 				</div>
@@ -118,17 +118,17 @@ onMounted(() => {
 		flex-direction: row;
 		flex-wrap: wrap-reverse;
 		justify-content: center;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
 		.text {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			p {
-				padding-left: 10%;
-				padding-right: 10%;
-				max-width: 600px;
+				padding-left: 5%;
+				padding-right: 5%;
+				max-width: 500px;
 			}
 		}
 		.imageContainer {
@@ -136,9 +136,9 @@ onMounted(() => {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			max-width: 500px;
 			img {
 				margin-bottom: 2rem;
-				max-width: 500px;
 				width: 80%;
 				border-radius: 3rem;
 				transition: box-shadow 500ms ease-in-out;
@@ -155,8 +155,8 @@ onMounted(() => {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			max-width: 500px;
 			iframe {
-				max-width: 500px;
 				min-width: 400px;
 				min-height: 300px;
 			}
