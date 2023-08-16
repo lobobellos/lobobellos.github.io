@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const iframe = ref<HTMLIFrameElement|null>(null)
+const iframe = ref<HTMLIFrameElement | null>(null)
 onMounted(() => {
-	if(iframe.value) iframe.value.src ='https://www.youtube.com/embed/0zpflsYc4PA'
+	if (iframe.value)
+		iframe.value.src = 'https://www.youtube.com/embed/0zpflsYc4PA'
 })
 </script>
 
@@ -12,21 +13,20 @@ onMounted(() => {
 			<div class="about">
 				<div class="text">
 					<p>
-						FRC team 7243, known as the "Robo-Lobo-Bellos," is
-						dedicated to empowering students through comprehensive
-						STEM education, fostering adept problem-solving
-						abilities, honing effective management techniques,
-						and nurturing impactful leadership skills.<br>
-						<br>
-						Our team operates under a student-led and
-						student-focused framework, ensuring that every
-						individual discovers their unique role within our
-						dynamic community. <br>
-						<br>
-						This ethos of unity and collaboration cultivates
-						something of a second family, instilling within us a
-						profound sense of team pride and an unwavering
-						commitment to exert our utmost effort.
+						FRC team 7243, known as the "Robo-Lobo-Bellos," is dedicated to
+						empowering students through comprehensive STEM education, fostering
+						adept problem-solving abilities, honing effective management
+						techniques, and nurturing impactful leadership skills.
+						<br />
+						<br />
+						Our team operates under a student-led and student-focused framework,
+						ensuring that every individual discovers their unique role within
+						our dynamic community.
+						<br />
+						<br />
+						This ethos of unity and collaboration cultivates something of a
+						second family, instilling within us a profound sense of team pride
+						and an unwavering commitment to exert our utmost effort.
 					</p>
 				</div>
 				<div class="imageContainer">
@@ -37,70 +37,73 @@ onMounted(() => {
 		<SectionHeader title="What We Do" />
 		<div class="whatWeDo">
 			<div class="text">
-				<p>
 				<h3>Pre-Season</h3>
-				During the Pre-Season, students can anticipate
-				engaging in a range of activities aimed at building
-				foundational skills and preparing for the upcoming
-				competition season.<br>
-				<br>
-				This period involves workshops and training
-				sessions to familiarize members with tools, programming
-				languages, and design principles.<br>
-				<br>
-				Additionally, teambonding, strategizing, and
-				brainstorming for potential robot designs and game
-				strategies are common elements of the FRC preseason
-				experience.<br>
-				<br>
+				<p>
+					During the Pre-Season, students can anticipate engaging in a range of
+					activities aimed at building foundational skills and preparing for the
+					upcoming competition season.
+					<br />
+					<br />
+					This period involves workshops and training sessions to familiarize
+					members with tools, programming languages, and design principles.
+					<br />
+					<br />
+					Additionally, teambonding, strategizing, and brainstorming for
+					potential robot designs and game strategies are common elements of the
+					FRC preseason experience.
 				</p>
 			</div>
 			<div class="imageContainer">
-				<img src="../assets/preseason.png" alt="Pre-Season image">
+				<img src="../assets/preseason.png" alt="Pre-Season image" />
 			</div>
 		</div>
 		<div class="whatWeDo">
 			<div class="text">
-				<p>
 				<h3>Build Season</h3>
-				During the intense build season of an FRC
-				(FIRST Robotics Competition) team, students can expect
-				a dynamic and collaborative environment focused on
-				designing, fabricating, and iterating on their
-				competition robot.<br>
-				<br>
-				Working closely with mentors, students will apply their
-				skills in engineering, programming, and problem-solving
-				to construct a functional and innovative robot that
-				meets the challenges of the game.<br>
-				<br>
-				The build season involves long hours, tight deadlines,
-				and a strong sense of camaraderie as the team strives
-				to create a successful robot before the competition.
+				<p>
+					During the intense build season of an FRC (FIRST Robotics Competition)
+					team, students can expect a dynamic and collaborative environment
+					focused on designing, fabricating, and iterating on their competition
+					robot.
+					<br />
+					<br />
+					Working closely with mentors, students will apply their skills in
+					engineering, programming, and problem-solving to construct a
+					functional and innovative robot that meets the challenges of the game.
+					<br />
+					<br />
+					The build season involves long hours, tight deadlines, and a strong
+					sense of camaraderie as the team strives to create a successful robot
+					before the competition.
 				</p>
 			</div>
 			<div class="videoContainer">
-				<iframe src="" ref="iframe" title="2023 Chagred Up Competition Video" frameborder="0"
+				<iframe
+					src=""
+					ref="iframe"
+					title="2023 Chagred Up Competition Video"
+					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+					allowfullscreen
+				></iframe>
 			</div>
 		</div>
 		<div class="buttons">
 			<div class="innerButtons">
 				<div class="buttonContainer">
-					<FancyButton 
-						text="Donate" 
+					<FancyButton
+						text="Donate"
 						href="https://www.gofundme.com/f/support-our-schools-robotics-team"
 						newpage
-						:useRouter=false
+						:useRouter="false"
 					/>
 				</div>
 				<div class="buttonContainer">
-					<FancyButton 
-					text="Corporate" 
-					href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit"
-					newpage
-					:useRouter=false
+					<FancyButton
+						text="Corporate"
+						href="https://docs.google.com/document/d/1_AKteEcrHS7Chz8WQfl-UCybl7kI6Q30VZLYpGshqRU/edit"
+						newpage
+						:useRouter="false"
 					/>
 				</div>
 			</div>
@@ -163,17 +166,17 @@ onMounted(() => {
 		}
 	}
 	.buttons {
-		margin-top:2rem;
-		display:flex;
+		margin-top: 2rem;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		.innerButtons {
-			display:flex;
+			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: center;
 			.buttonContainer {
-				margin:0.5rem;
+				margin: 0.5rem;
 			}
 		}
 	}
