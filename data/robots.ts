@@ -1,7 +1,7 @@
-import robot2023 from '~/assets/robots/robot-2023.jpg'
-import robot2022 from '~/assets/robots/robot-2022.jpg'
-import robot2020 from '~/assets/robots/robot-2020.jpg'
-import robot2018 from '~/assets/robots/robot-2018.jpg'
+import robot2023 from '/images/robots/robot-2023.jpg'
+import robot2022 from '/images/robots/robot-2022.jpg'
+import robot2020 from '/images/robots/robot-2020.jpg'
+import robot2018 from '/images/robots/robot-2018.jpg'
 
 export const robots = [
   {
