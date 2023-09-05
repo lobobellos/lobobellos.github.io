@@ -10,6 +10,14 @@ export default defineNuxtConfig({
 	site: {
     url: 'https://lobobellos.github.io',
   },
+	nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+      ]
+    }
+  }
   app: {
     head: {
       title: 'FRC Team 7243: Robo-Lobo-Bellos',
