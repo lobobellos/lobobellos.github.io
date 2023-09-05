@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="content">
-			<NuxtImg src="/images/wolfhead.png" alt="wolf head logo"/>
+			<img src="~/assets/wolfhead.png" alt="wolf head logo">
 		</div>
 	</div>
 </template>

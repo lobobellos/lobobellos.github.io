@@ -4,7 +4,7 @@ useSeoMeta({
   ogTitle: 'Robo-Lobo-Bellos',
   description: 'FRC Team 7243, The Robo-Lobo-Bellos is a FIRST robotics team based out of Northeast Denver, CO, USA',
   ogDescription: 'FRC Team 7243, The Robo-Lobo-Bellos is a FIRST robotics team based out of Northeast Denver, CO, USA',
-  ogImage: '/images/teamPic.jpg',
+  ogImage: './assets/teamPic.jpg',
 })
 useHead({
   meta: [

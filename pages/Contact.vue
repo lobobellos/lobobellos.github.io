@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { people } from '../data'
+import { people } from '~/data'
 import SectionHeader from '../components/SectionHeader.vue'
 </script>
 
@@ -7,13 +7,13 @@ import SectionHeader from '../components/SectionHeader.vue'
 	<div class="titleContainer">
 		<div class="images">
 			<a href="https://github.com/lobobellos" target="_blank">
-				<NuxtImg src="/images/github.png" alt="github" id="github" />
+				<img src="~/assets/github.png" alt="github" id="github" />
 			</a>
 			<a href="https://instagram.com/robolobobellos" target="_blank">
-				<NuxtImg src="/images/instagram.webp" alt="instagram" />
+				<img src="~/assets/instagram.webp" alt="instagram" />
 			</a>
 			<a href="https://www.youtube.com/@RoboLoboBellos" target="_blank">
-				<NuxtImg src="/images/youtube.png" alt="youtube" />
+				<img src="~/assets/youtube.png" alt="youtube" />
 			</a>
 		</div>
 		<div class="secHead">

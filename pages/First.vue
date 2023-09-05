@@ -1,7 +1,7 @@
 <template>
 	<div class="titleContainer">
 		<a href="https://www.firstinspires.org">
-			<NuxtImg alt="FIRST" src="/images/FIRST-logo.png" />
+			<img alt="FIRST" src="~/assets/FIRST-logo.png" />
 		</a>
 		<div class="secHead">
 			<SectionHeader title="What Is FIRST?" />

@@ -30,7 +30,7 @@ onMounted(() => {
 					</p>
 				</div>
 				<div class="imageContainer">
-					<NuxtImg src="/images/teamPic.jpg" alt="Team Photo" />
+					<img src="../assets/teamPic.jpg" alt="Team Photo" />
 				</div>
 			</div>
 		</div>
@@ -54,7 +54,7 @@ onMounted(() => {
 				</p>
 			</div>
 			<div class="imageContainer">
-				<NuxtImg src="/images/preseason.png" alt="Pre-Season image" />
+				<img src="../assets/preseason.png" alt="Pre-Season image" />
 			</div>
 		</div>
 		<div class="whatWeDo">

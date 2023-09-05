@@ -1,7 +1,7 @@
-import Comcast from '/images/comcast.jpg'
-import NREL from '/images/NREL.png'
-import NECLogo from '/images/NECLogo.jpg'
-import CareerConnect from '/images/careerconnect.jpg'
+import Comcast from '../assets/comcast.jpg'
+import NREL from '../assets/NREL.png'
+import NECLogo from '../assets/NECLogo.jpg'
+import CareerConnect from '../assets/careerconnect.jpg'
 
 export const partners = [
   {

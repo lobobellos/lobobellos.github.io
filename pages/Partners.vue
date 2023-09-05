@@ -15,7 +15,7 @@ import { partners } from '../data'
 			<hr />
 			<div class="images" v-if="tier.usesImages">
 				<div class="imageContainer" v-for="image in tier.images">
-					<NuxtImg :src="image" />
+					<img :src="image" />
 				</div>
 			</div>
 			<div class="names" v-else>

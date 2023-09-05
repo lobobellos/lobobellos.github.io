@@ -1,21 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default {
+export default defineNuxtConfig({
   //devtools: { enabled: true },
-  modules: [
-    'nuxt-simple-sitemap',
-    '@nuxt/image',
-  ],
-  ssr: true,
   vite:{
     build:{
       minify:true,
     },
-  },
-  image: {
-    // Options
-    inject: true,
-    quality: 80,
-    format: ['webp'],
   },
   app: {
     head: {
@@ -32,4 +21,4 @@ export default {
       ]
     },
   }
-}
+})

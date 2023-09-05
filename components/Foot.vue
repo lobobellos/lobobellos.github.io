@@ -18,13 +18,13 @@
 				<p>Social Media</p>
 				<div class="images">
 					<a href="https://github.com/lobobellos" target="_blank">
-						<NuxtImg src="/images/github.png" alt="github" id="github" />
+						<img src="../assets/github.png" alt="github" id="github" />
 					</a>
 					<a href="https://instagram.com/robolobobellos" target="_blank">
-						<NuxtImg src="/images/instagram.webp" alt="instagram" />
+						<img src="../assets/instagram.webp" alt="instagram" />
 					</a>
 					<a href="https://www.youtube.com/@RoboLoboBellos" target="_blank">
-						<NuxtImg src="/images/youtube.png" alt="youtube" />
+						<img src="../assets/youtube.png" alt="youtube" />
 					</a>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 				>
 					Team Contract
 				</a><br>
-				<a href="/images/structure.png" target="_blank">Team Structure</a>
+				<a href="~/assets/structure.png" target="_blank">Team Structure</a>
 			</div>
 			<div class="item">
 				<p>Info for Sponsors</p>

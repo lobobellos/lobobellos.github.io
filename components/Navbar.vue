@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import threeLines from '~/assets/threeLines.png'
+import teamLogo from '~/assets/teamLogo.png'
 
 const width = ref<number>(null)
 const threeLinesImg = ref<HTMLImageElement>(null)
@@ -7,27 +9,25 @@ let rotation = 0
 let translateY = -200
 
 onMounted(() => {
-	threeLinesImg.value = <HTMLImageElement>document.getElementById('threeLinesImg')
 	resizeHandler()
 	window.addEventListener('resize', () => {
 		resizeHandler()
 	})
+	threeLinesImg.value.onclick = toggleNavBar
 })
 function resizeHandler() {
 	console.log("resize")
-	console.log(threeLinesImg.value.style)
 	width.value = window.innerWidth
 	threeLinesImg.value.hidden = !(width.value < 1050)
 	if (width.value < 1050) {
 		rotation = 0
 		translateY = -200
 		if(dropdownItems.value) dropdownItems.value.style.transform = `translateY(${translateY}%)`
-		//if(threeLinesImg.value) threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
+		if(threeLinesImg.value) threeLinesImg.value.style.transform = `rotate(${rotation}deg)`
 	}
 }
 function toggleNavBar() {
 	console.log("toggle")
-	
 	rotation = -rotation - 90
 	translateY = -translateY - 200
 	dropdownItems.value.style.transform = `translateY(${translateY}%)`
@@ -39,7 +39,7 @@ function toggleNavBar() {
 	<div class="navbar">
 		<div class="imageContainer">
 			<router-link to="/">
-				<NuxtImg src="/images/teamLogo.png" alt="team logo" />
+				<img :src="teamLogo" alt="team logo" />
 			</router-link>
 		</div>
 		<div class="links" v-if="width >= 1050">
@@ -54,7 +54,7 @@ function toggleNavBar() {
 			</a>
 		</div>
 		<div class="threeLines" hidden>
-			<NuxtImg src="/images/threeLines.png" id="threeLinesImg" alt="three lines icon" @click="toggleNavBar" />
+			<img :src="threeLines" ref="threeLinesImg" alt="three lines icon" />
 		</div>
 	</div>
 	<div class="dropdown" ref="dropdownItems" v-if="width < 1050 && width">
