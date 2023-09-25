@@ -31,7 +31,7 @@ export const partners = [
     title: 'Wolf Cub Partners: $499-$1',
     usesImages: false,
     names: [
-      'Nelvin McCaskill'
+      'Nelvin McCaskill',
       'Cisco Tapia',
       'Mathew Gonzales',
       'Jeremy Hamm',
