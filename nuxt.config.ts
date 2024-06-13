@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         '/',
       ]
     }
-  }
+  },
   app: {
     head: {
       title: 'FRC Team 7243: Robo-Lobo-Bellos',
