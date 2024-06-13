@@ -42,6 +42,7 @@ body {
 		overflow: clip;
 		#divider {
 			position: relative;
+			transform: translateY(1px);
 		}
 		.router {
 			background-color: rgb(62, 16, 88);
