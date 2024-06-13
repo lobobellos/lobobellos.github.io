@@ -15,5 +15,8 @@
     "nuxt-simple-sitemap": "^3.2.6",
     "prettier": "^3.0.2",
     "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "@nuxt/kit": "3.12.1"
   }
 }
