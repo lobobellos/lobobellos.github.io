@@ -1,3 +1,14 @@
+<script setup lang="ts">
+
+const year = ref<HTMLSpanElement|null>(null);
+
+onMounted(() => {
+	console.log(year.value);
+	if(year.value)
+		year.value.innerHTML = (new Date()).getFullYear().toString();
+})
+</script>
+
 <template>
 	<div class="main">
 		<div class="custom-shape-divider-top-1660162422">
@@ -49,7 +60,7 @@
 			</div>
 		</div>
 		<p id="copyright">
-			Copyright © 2022 Robo-Lobo-Bellos. All rights reserved.
+			Copyright © <span ref="year">2022</span> Robo-Lobo-Bellos. All rights reserved.
 		</p>
 	</div>
 </template>
