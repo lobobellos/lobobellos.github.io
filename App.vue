@@ -22,7 +22,7 @@ useHead({
 		<Top />
 		<ShapeDivider id="divider" />
 		<div class="router">
-			<Router-view></Router-view>
+			<NuxtPage />
 		</div>
 		<Foot />
 	</div>
