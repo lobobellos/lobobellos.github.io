@@ -14,9 +14,11 @@
     "nuxt": "^3.6.5",
     "nuxt-simple-sitemap": "^3.2.6",
     "prettier": "^3.0.2",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "typescript": "5.0"
   },
   "dependencies": {
-    "@nuxt/kit": "3.12.1"
+    "@nuxt/kit": "3.12.1",
+    "h3": "latest"
   }
 }
