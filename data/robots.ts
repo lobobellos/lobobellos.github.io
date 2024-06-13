@@ -1,14 +1,26 @@
-import robot2023 from '~/assets/robots/robot-2023.jpg'
-import robot2022 from '~/assets/robots/robot-2022.jpg'
-import robot2020 from '~/assets/robots/robot-2020.jpg'
 import robot2018 from '~/assets/robots/robot-2018.jpg'
+import robot2020 from '~/assets/robots/robot-2020.jpg'
+import robot2022 from '~/assets/robots/robot-2022.jpg'
+import robot2023 from '~/assets/robots/robot-2023.jpg'
+import robot2024 from '~/assets/robots/robot-2024.png'
 
 export const robots = [
   {
+    imageUrl: robot2024,
+    title: '2024: Jimmi',
+    description: `Jimmi was our first attempt at a swerve-drive based robot.
+    Jimmi used 4 mk4 SDS swerve-drive modules, driven by REV NEO 1.1 motors.
+    additionally, Jimmi made heavy use of sheet aluminum and box extrusion, both of which were cut to shape using
+    our CNC machine. Jimmi used a combination of a pneumatic cylinder and flywheels to shoot game pieces,
+    two rollers to intake game pieces, and polybelts to move game between the intake and the launcher.
+    Jimmi was also our first robot to be fully modeled in CAD.
+    `
+  },
+  {
     imageUrl: robot2023,
     title: '2023: Nikola',
-    description: `Nikola is by far our most mechanically
-  comblex robot. It uses a holonomic 
+    description: `Nikola was by far our most mechanically
+  comblex robot when it was made. It uses a holonomic 
   mecanum drivebase to traverse the 
   game field, and a 2-joint arm, along
   with a linear-slide based claw, 
