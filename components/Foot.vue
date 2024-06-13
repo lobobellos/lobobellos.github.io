@@ -36,7 +36,7 @@
 				>
 					Team Contract
 				</a><br>
-				<a href="~/assets/structure.png" target="_blank">Team Structure</a>
+				<a href="/images/structure24.png" target="_blank">Team Structure</a>
 			</div>
 			<div class="item">
 				<p>Info for Sponsors</p>
