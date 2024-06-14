@@ -8,11 +8,11 @@ export const robots = [
   {
     imageUrl: robot2024,
     title: '2024: Jimmi',
-    description: `Jimmi was our first attempt at a swerve-drive based robot.
-    Jimmi used 4 mk4 SDS swerve-drive modules, driven by REV NEO 1.1 motors.
-    additionally, Jimmi made heavy use of sheet aluminum and box extrusion, both of which were cut to shape using
+    description: `Jimmi, our first attempt at a swerve-drive based robot used 4 mk4 SDS swerve-drive modules,
+    driven by 8 REV NEO 1.1 motors.
+    Additionally, Jimmi made heavy use of sheet aluminum and box extrusion, both of which were cut to shape using
     our CNC machine. Jimmi used a combination of a pneumatic cylinder and flywheels to shoot game pieces,
-    two rollers to intake game pieces, and polybelts to move game between the intake and the launcher.
+    two rollers to intake game pieces, and polybelts to move game pieces between the intake and the launcher.
     Jimmi was also our first robot to be fully modeled in CAD.
     `
   },
